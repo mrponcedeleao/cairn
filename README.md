@@ -1,6 +1,6 @@
 # Cairn
 
-A companion for a crossing into a new field — a mid-career transition, or a student's first step from study into work. Study the courses, map the field, structure and develop your own research, plan the transition. One local file: your notes never leave your machine. By hand or with AI, put together the cards you will revisit, read aloud and share with others.
+A companion for a crossing into a new field, a mid-career transition, or a student's first step from study into work. Study the courses, map the field, structure and develop your own research, plan the transition. One local file: your notes never leave your machine. By hand or with AI, put together the cards you will revisit, read aloud and share with others.
 
 **On your desk and on the go.** Cairn runs in any browser: open the file on your laptop, or open the address on your phone and load your deck from it. Read your cards aloud on a walk, mark what you have done, save the changes as a small patch and bring them back to your desk.
 
