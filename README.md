@@ -10,4 +10,6 @@ A companion for a crossing into a new field, a mid-career transition, or a stude
 
 **How the cards were made:** The example cards are drafted with Claude.
 
-Licence: MIT for the app; the card packs will carry their own (CC BY 4.0).
+**Licence:** MIT for the app; the card packs will carry their own (CC BY 4.0).
+
+**Questions and feedback:** cairn.app.feedback@gmail.com
