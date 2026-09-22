@@ -1,0 +1,339 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "ex-cairn-baseline",
+   "type": "baseline",
+   "title": "Baseline, where Sam started",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "asOf": "2026-05-15",
+   "body": "Sample card: delete me once you have your own. The baseline is who you are on day one, written once, edited rarely. Sam: 12 years in supply-chain, burnt out on freight, in love with rewilding.",
+   "achievements": "Sample card: delete me once you have your own. Cut cold-chain waste 31%, led the sensor-tracking rollout across 40 depots. Evidence: internal award; the CFO's email.\n\n(One achievement per paragraph; name the evidence, that is the habit.)",
+   "strengths": "Logistics under uncertainty; making messy systems legible.",
+   "constraints": "Two kids; cannot relocate; 9 months of runway.",
+   "motivations": "Wants the second half of the career to mean something.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-plan-a",
+   "type": "plan",
+   "title": "Plan A, conservation tech operations",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "planLetter": "A",
+   "status": "active",
+   "statement": "Sample card: delete me once you have your own. A plan card states a direction and, crucially, when you would abandon it.",
+   "routes": "Operations roles at rewilding orgs; supply-chain skills mapped to field-station logistics.",
+   "targetOrgs": "TrailWorks Institute (see Field Map)",
+   "switchTriggers": "If no interview by month 6, weight shifts to Plan B.",
+   "amendments": "2026-08-01: narrowed from 'anything green' to operations roles (from the 1 August check-in).",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-phase-1",
+   "type": "phase",
+   "title": "Phase 1, Learn the field",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "order": 1,
+   "timeframe": "May to July 2026",
+   "status": "closed",
+   "purpose": "Sample card: delete me once you have your own. A phase card blocks the journey into stages with success criteria you can check.",
+   "successCriteria": "One course finished; ten organisations mapped; three conversations.",
+   "retrospective": "Met 2 of 3, conversations were the hard part. Carried into Phase 2.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-phase-2",
+   "type": "phase",
+   "title": "Phase 2, Talk to the field",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "order": 2,
+   "timeframe": "August to October 2026",
+   "status": "current",
+   "purpose": "Sample card: delete me once you have your own. The current phase: the one the section header and the due-soon strip are watching.",
+   "successCriteria": "Ten conversations; two applications sent; one uncertainty resolved.",
+   "retrospective": "",
+   "myNotes": "",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-goal-1",
+   "type": "goal",
+   "title": "Finish the Conservation Tech 101 course",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "phaseId": "ex-cairn-phase-1",
+   "targetDate": "2026-07-31",
+   "status": "done",
+   "statement": "Sample card: delete me once you have your own. A goal card is one commitment with a date and evidence.",
+   "evidence": "Certificate saved; final project = a field-station supply model.",
+   "outcome": "Done two weeks late, logged honestly, the trail is the point.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-goal-2",
+   "type": "goal",
+   "title": "Send the Trailworks application",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "phaseId": "ex-cairn-phase-2",
+   "targetDate": "2026-10-03",
+   "targetTime": "",
+   "status": "in-progress",
+   "statement": "Sample card: delete me once you have your own. A goal with a date inside the next fortnight appears in the due-soon strip and exports to your calendar with one click.",
+   "evidence": "Draft cover letter written; two referees asked.",
+   "outcome": "",
+   "myNotes": "",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-opp-1",
+   "type": "opportunity",
+   "title": "Ranger-station ops coordinator (fictional)",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "org": "Highlands Trust",
+   "role": "Operations Coordinator",
+   "deadline": "2026-07-20",
+   "decision": "skipped",
+   "reasoning": "Sample card: delete me once you have your own. The reasoning field is the treasure: Sam skipped this because it required relocation, a constraint the Baseline already named. A reasoned no prevents both regret and drift.",
+   "link": "https://example.com/highlands-role",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-opp-2",
+   "type": "opportunity",
+   "title": "Research Assistant, path persistence (made up)",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "org": "The Trailworks Institute",
+   "role": "Research Assistant",
+   "link": "https://example.com/trailworks/jobs/ra",
+   "deadline": "2026-10-10",
+   "deadlineTime": "",
+   "sourceBoard": "Waymark",
+   "decision": "pursuing",
+   "reasoning": "Sample card: delete me once you have your own. The same posting as on the Trailworks card in the Field Map, seen from the other side: there it is one of the organisation's open doors, here it is Sam's decision about it.",
+   "outcome": "",
+   "myNotes": "",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-unc-1",
+   "type": "uncertainty",
+   "title": "Do ops skills actually transfer to field stations?",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "question": "Sample card: delete me once you have your own. An uncertainty card names what you do not know and the cheapest way to find out.",
+   "whyItMatters": "Plan A rests on it.",
+   "cheapestTest": "One coffee with a station manager; ask what breaks weekly.",
+   "testStatus": "resolved",
+   "result": "Yes, 'it is freight with mud'. Resolved by one conversation, not a course.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-bnd-1",
+   "type": "boundary",
+   "title": "No applications during course weeks",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "status": "holding",
+   "statement": "Sample card: delete me once you have your own. A boundary card is what you will NOT do, the strongest anti-drift device.",
+   "why": "Split attention killed Sam's January: half-studied, half-applied, neither done well.",
+   "lastReviewed": "2026-09-01",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-checkin-1",
+   "type": "checkin",
+   "title": "Check-in, 1 August",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "date": "2026-08-01",
+   "periodCovered": "2026-07-01 to 2026-08-01",
+   "whatMoved": "Sample card: delete me once you have your own. A check-in is a dated stone on the trail: what moved, what stalled, and the drift question. Moved: course modules 3–5; org map at 12.",
+   "whatStalled": "Conversations: zero. Fear, not time.",
+   "driftCheck": "Does the plan still describe what I am actually doing? Mostly, but applications had drifted broad; amended Plan A (see its amendment log).",
+   "amendmentsMade": "Plan A narrowed to operations roles.",
+   "sustainability": "Sleep fine; evenings with the kids protected.",
+   "nextPriority": "Three conversations before anything else. Once written, a check-in is never edited, corrections go in the NEXT one.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-checkin-2",
+   "type": "checkin",
+   "title": "Check-in, 1 September",
+   "source": "Sam's career notes, May 2026 (fictional) - carded Sep 2026",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "date": "2026-09-01",
+   "periodCovered": "2026-08-01 to 2026-09-01",
+   "whatMoved": "Sample card: delete me once you have your own. The latest check-in. With a fourteen-day cadence set on the Cairns guide, the section header counts from this date and turns amber, then red, when the next one is overdue; that is the heartbeat working, not an error.",
+   "whatStalled": "Applications: one drafted, none sent.",
+   "driftCheck": "Plan A still describes what I am doing; the boundary held through the course weeks.",
+   "amendmentsMade": "None this month.",
+   "sustainability": "Two late nights too many; fixed the following week.",
+   "nextPriority": "Send the Trailworks application before the deadline; then the fellowship proposal.",
+   "myNotes": "",
+   "tags": [
+    "example",
+    "cairns-seed"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  }
+ ]
+}

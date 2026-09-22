@@ -1,0 +1,311 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "ex-guide-trailcraft-101",
+   "type": "guide",
+   "title": "Trailcraft 101",
+   "sectionRoot": "course",
+   "blurb": "Sample course guide, trimmed: this pack is about PLACEMENT, so the guide carries only what the syllabus card needs to resolve against.",
+   "description": "",
+   "howToUse": "",
+   "aiWorkflow": "",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [
+    "example",
+    "course",
+    "guide"
+   ],
+   "curriculum": "Trailcraft 101"
+  },
+  {
+   "id": "ex-courseunit-1",
+   "type": "courseUnit",
+   "title": "Unit 1: Reading the Ground",
+   "source": "Cairn example deck",
+   "tags": [
+    "example",
+    "course",
+    "courseUnit"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "course",
+   "courseId": "ex-guide-trailcraft-101",
+   "unitKey": "unit-1",
+   "order": 1,
+   "description": "Sample card: delete me once you have your own. A unit card introduces a block of the course. This pretend unit covers how paths form and how walkers read terrain.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-syllabus-1-1",
+   "type": "syllabus",
+   "title": "Unit 1.1 - Why paths go where they go",
+   "source": "Cairn example deck",
+   "tags": [
+    "example",
+    "course",
+    "syllabus"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "course": "ex-guide-trailcraft-101",
+     "unitKey": "unit-1"
+    }
+   ],
+   "subLabel": "1.1",
+   "intro": "Sample card: delete me once you have your own. A syllabus card defines a sub-unit: its intro text, learning outcomes, and the reading list below. Content cards point at this card to appear under it.",
+   "learningOutcomes": "Understand desire lines; explain why the oldest path is rarely the straightest.",
+   "duration": "45 min",
+   "resources": [
+    {
+     "title": "The Old Ways of Walking (fictional)",
+     "required": true,
+     "author": "A. Vega",
+     "year": "2019",
+     "readTime": "20 min",
+     "linkWritten": "https://example.com/old-ways",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Old Ways of Walking"
+    },
+    {
+     "title": "Desire Lines: a field guide (fictional)",
+     "required": false,
+     "author": "K. Moss",
+     "year": "2021",
+     "readTime": "15 min",
+     "linkWritten": "https://example.com/desire-lines",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Desire Lines"
+    }
+   ],
+   "resourceProgress": {},
+   "myNotes": ""
+  },
+  {
+   "id": "ex-frontier-wayfinding",
+   "type": "frontier",
+   "title": "The Wayfinding Problem",
+   "sectionRoot": "research",
+   "order": 1,
+   "source": "",
+   "memberships": [],
+   "description": "The frontier card is here so the question card's track has something to name. A track that names no frontier files the card in Research with nothing to group it under.",
+   "label": "",
+   "myNotes": "",
+   "relatedIds": [],
+   "references": [],
+   "tags": [
+    "example",
+    "research"
+   ],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z"
+  },
+  {
+   "id": "fr-member-ex-vega",
+   "type": "sectionMember",
+   "title": "Alma Vega / The Trailworks Institute",
+   "castMatch": "Alma Vega (fictional)",
+   "sectionRoot": "furtherReading",
+   "order": 1,
+   "description": "The principal. Its id begins fr-member- because the app reads that prefix to decide a card belongs to Further Reading. Its title is the shelf's name, in the person-or-organisation form; castMatch is the cast card's title, character for character. The two strings do different jobs and are not the same string.",
+   "resources": [
+    {
+     "title": "The Old Ways of Walking (fictional)",
+     "author": "Alma Vega",
+     "year": "2019",
+     "readTime": "40 min",
+     "required": false,
+     "summary": "The work this shelf is built around. Its sourceMatch is a short distinctive fragment; the library card below carries the same string in source, and that is what gathers it here.",
+     "sourceMatch": "Old Ways of Walking"
+    },
+    {
+     "title": "Paths as Memory (fictional lecture)",
+     "author": "Alma Vega",
+     "year": "2023",
+     "readTime": "55 min",
+     "required": false,
+     "summary": "A second work, on the shelf only - it belongs to no course.",
+     "sourceMatch": "Paths as Memory"
+    }
+   ],
+   "source": "",
+   "memberships": [],
+   "myNotes": "",
+   "relatedIds": [],
+   "references": [],
+   "tags": [
+    "example",
+    "further-reading"
+   ],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cast-vega",
+   "type": "cast",
+   "title": "Alma Vega (fictional)",
+   "role": "Trail ecologist; the author this shelf is built around.",
+   "stance": "Paths are evidence before they are infrastructure.",
+   "keyWorks": "The Old Ways of Walking (2019); Paths as Memory (2023).",
+   "anchor": "The chapter where she counts fence posts instead of walkers.",
+   "whyTheyMatter": "Her title equals the principal's castMatch exactly, which is what pairs this card with the shelf.",
+   "disambiguation": "",
+   "photo": "",
+   "researchRelevance": "",
+   "myNotes": "",
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    },
+    {
+     "cast": "fr-member-ex-vega"
+    }
+   ],
+   "source": "Desire Lines: a field guide",
+   "relatedIds": [],
+   "references": [],
+   "tags": [
+    "example",
+    "course",
+    "further-reading"
+   ],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z"
+  },
+  {
+   "id": "ex-lib-old-ways",
+   "type": "library",
+   "title": "The Old Ways of Walking (fictional)",
+   "summary": "ONE card in TWO homes: the course unit that assigns it, and the author's shelf. Not two cards. Its source matches both the syllabus resources row and the principal's resources row, which is what makes it appear in both places.",
+   "author": "Alma Vega",
+   "year": "2019",
+   "mediaType": "Book",
+   "status": "Reading",
+   "whyItMatters": "The two-homes rule in one card: edit it once and it changes in both places.",
+   "researchRelevance": "",
+   "myNotes": "",
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    },
+    {
+     "cast": "fr-member-ex-vega"
+    }
+   ],
+   "source": "The Old Ways of Walking",
+   "relatedIds": [],
+   "references": [],
+   "tags": [
+    "example",
+    "course",
+    "further-reading"
+   ],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z"
+  },
+  {
+   "id": "ex-lib-paths-as-memory",
+   "type": "library",
+   "title": "Paths as Memory (fictional lecture)",
+   "summary": "On the shelf and nowhere else. Its membership is {cast: <principal id>} ALONE - the app implies Further Reading from the cast id, and adding a bare section membership beside it is an error, not a belt-and-braces.",
+   "author": "Alma Vega",
+   "year": "2023",
+   "mediaType": "Talk",
+   "status": "To read",
+   "whyItMatters": "",
+   "researchRelevance": "",
+   "myNotes": "",
+   "memberships": [
+    {
+     "cast": "fr-member-ex-vega"
+    }
+   ],
+   "source": "Paths as Memory",
+   "relatedIds": [],
+   "references": [],
+   "tags": [
+    "example",
+    "further-reading"
+   ],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z"
+  },
+  {
+   "id": "ex-question-who-decides",
+   "type": "question",
+   "title": "Who decides where the path goes?",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "research"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    },
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "question": "Sample card: delete me once you have your own. A question card holds an open question you are not ready to answer. If paths are ledgers of past walkers' decisions, who is accountable when the path leads somewhere harmful?",
+   "currentThinking": "Current thinking: no one and everyone, which is exactly why it stays an open question card and not a thesis.",
+   "whyItMatters": "Question cards invite attack, in research communities, that is how collaborators are found.",
+   "myNotes": "",
+   "researchRelevance": ""
+  }
+ ]
+}

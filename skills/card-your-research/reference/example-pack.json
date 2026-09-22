@@ -1,0 +1,278 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "ex-frontier-wayfinding",
+   "type": "frontier",
+   "title": "The Wayfinding Problem",
+   "source": "",
+   "tags": [
+    "example",
+    "research",
+    "frontier",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "research",
+   "order": 1,
+   "description": "Sample card: delete me once you have your own. A research topic card heads a topic. The pretend claim: walkers do not follow maps, they follow accumulated small decisions, and paths remember those decisions longer than any map does. Your real topic goes here; the cards beneath show the method.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-thesis-paths-remember",
+   "type": "thesis",
+   "title": "Paths remember decisions",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "thesis",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "theFrontier": "The Wayfinding Problem",
+   "statement": "Sample card: delete me once you have your own. A thesis card states your claim plainly: a path is a ledger of past decisions, and reading it beats reading the map when conditions change.",
+   "evidenceFor": "Not yet an evidenced finding, one field observation (the winter road) and intuition. Honesty first: the maturity badge below says exactly how far this has been tested.",
+   "openProblems": "How to measure 'memory' in a path? See the metric card.",
+   "maturity": "Intuition",
+   "provenance": "Developed with AI. The claim is the author's, from their notebook of June 2026; the wording and the open problems were drafted with an AI assistant on 22 September 2026 and are not yet theirs.",
+   "myNotes": "",
+   "readingStatus": "Original",
+   "definition": "A path keeps the record of every decision taken on it; where it goes tells you what its walkers chose, season after season.",
+   "anchor": "The winter road that stayed in use after the bridge opened.",
+   "metaphor": "Footprints as a ledger.",
+   "whyItMatters": "If paths remember, then reading them is reading the walkers, which is the whole point of the map."
+  },
+  {
+   "id": "ex-thesis-shortcuts-win",
+   "type": "thesis",
+   "title": "Shortcuts win within two seasons",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "theFrontier": "The Wayfinding Problem",
+   "statement": "Sample card: delete me once you have your own. A second thesis, one step further along: it has been stated, argued with a colleague, and has one piece of evidence behind it, so its badge reads Developing rather than Intuition.",
+   "definition": "If a shortcut saves more than a fifth of the walking time, walkers adopt it within two seasons whatever the signage says.",
+   "anchor": "The meadow shortcut (see the evidence card).",
+   "metaphor": "Water finds the drain.",
+   "whyItMatters": "If true, planners should design for the shortcut rather than against it.",
+   "researchRelevance": "",
+   "evidenceFor": "One field observation (the meadow); one interview (the Wardens' own manual admits it).",
+   "openProblems": "What counts as a season? Does it hold in towns?",
+   "maturity": "Intuition",
+   "readingStatus": "Original",
+   "provenance": "Own work. The claim and the wording are the author's, taken from their notebook of June 2026; an AI assistant put it on a card and drafted nothing of the argument.",
+   "myNotes": "",
+   "tags": [
+    "example",
+    "research",
+    "thesis",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [
+    "ex-thesis-paths-remember",
+    "ex-evidence-meadow"
+   ],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-metric-path-persistence",
+   "type": "metric",
+   "title": "Path Persistence Score",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "metric",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "whatItMeasures": "Sample card: delete me once you have your own. A metric card proposes a measurement: how long a route stays in use after its official alternative appears.",
+   "howCalculated": "Seasons of continued use ÷ seasons since the alternative opened. 1.0 = the old path never died.",
+   "validityConcerns": "A metric card always carries its own doubts: usage is hard to observe; snow hides evidence; walkers lie in surveys. Naming the weaknesses is part of the method.",
+   "maturity": "Intuition",
+   "provenance": "Developed with AI. The measure is the author's; its validity concerns were drafted with an AI assistant from their notes and are the first thing to check with someone who knows the field.",
+   "myNotes": "",
+   "readingStatus": "Original",
+   "definition": "How long an old path stays in use after a better alternative opens, in seasons, as a share of the seasons since the alternative opened.",
+   "anchor": "The meadow shortcut: three fences, still walked.",
+   "whyItMatters": "A number that can be wrong is the first thing a thesis needs."
+  },
+  {
+   "id": "ex-evidence-meadow",
+   "type": "evidence",
+   "title": "The meadow shortcut outlived three fences (fictional)",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "evidence",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "finding": "Sample card: delete me once you have your own. An evidence card records one finding with its source and its limits. In our fictional study, the meadow desire line re-formed within one season after each of three fence builds.",
+   "sourceRef": "Vega (2019), ch. 3, fictional.",
+   "strength": "Weak-moderate: single site, one observer.",
+   "limitations": "No control meadow; the observer planted the third fence herself.",
+   "supportsThesis": "Paths remember decisions",
+   "sourceType": "Original observation",
+   "readingStatus": "Read",
+   "provenance": "From the literature. A fictional field study, read by the author in June 2026 and summarised here with an AI assistant; the limitations line is the author's own reading of it.",
+   "myNotes": "",
+   "maturity": "Intuition"
+  },
+  {
+   "id": "ex-question-who-decides",
+   "type": "question",
+   "title": "Who decides where the path goes?",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "question",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "question": "Sample card: delete me once you have your own. A question card holds an open question you are not ready to answer. If paths are ledgers of past walkers' decisions, who is accountable when the path leads somewhere harmful?",
+   "currentThinking": "Current thinking: no one and everyone, which is exactly why it stays an open question card and not a thesis.",
+   "whyItMatters": "Question cards invite attack, in research communities, that is how collaborators are found.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-tension-build-vs-follow",
+   "type": "tension",
+   "title": "Build the path vs follow the walkers",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "tension",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "partyA": "The Wardens (and all planners)",
+   "claimA": "Routes should be designed: safety, drainage and durability require foresight that footprints do not have.",
+   "partyB": "The desire-line school (Vega)",
+   "claimB": "Routes should be discovered: accumulated walker decisions encode knowledge no planner can survey.",
+   "crux": "Sample card: delete me once you have your own. The crux field names the actual disagreement: whether local knowledge in footprints outweighs engineering foresight, measurable, in principle, by the Path Persistence Score.",
+   "whereItAppears": "Unit 1.1's reading vs the Wardens' trail manual (fictional).",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-framework-three-reads",
+   "type": "framework",
+   "title": "The Three Reads of a Path",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "framework",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "definition": "Sample card: delete me once you have your own. A framework card packages a reusable thinking tool.",
+   "components": "1. READ THE SURFACE, wear, width, litter: who uses it and how often.\n2. READ THE LINE, where it bends without reason: old obstacles, remembered.\n3. READ THE ABSENCE, where no path is: what walkers avoid tells you most.",
+   "whenToUse": "When entering any new territory, literal or professional.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-story-two-paths",
+   "type": "story",
+   "title": "The Two Paths",
+   "source": "Sam's field notebook, June 2026 (fictional)",
+   "tags": [
+    "example",
+    "research",
+    "story",
+    "wayfinding-problem"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "body": "Sample card: delete me once you have your own. A story card carries the topic's narrative heart.\n\nTwo villages sit one valley apart. The engineers built a road between them: graded, drained, straight. The shepherds kept an older line, higher on the slope, that no one built at all.\n\nIn winter the road floods and the old line holds. The road knows the map. The path knows the mountain.\n\nYour research topic deserves one story like this, it is the card people remember.",
+   "myNotes": "",
+   "metaphor": "Two paths through one meadow: the planned one and the walked one."
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "ex-inst-trailworks",
+   "type": "institution",
+   "title": "The Trailworks Institute (fictional)",
+   "source": "",
+   "tags": [
+    "example",
+    "field-map",
+    "full"
+   ],
+   "relatedIds": [
+    "ex-concept-desire-lines"
+   ],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "fieldMap"
+    }
+   ],
+   "blurb": "Sample card: delete me once you have your own. An institution card maps one organisation: what it does, how open it is, and what it is offering right now.",
+   "details": "A pretend research institute studying how routes form. The details field holds what they actually do, in your words, written after reading their About page rather than instead of it. This card carries no locations[] list: its pin comes from the card's own city, country and latlng, which is how 183 of the 247 Field Map cards in one working deck put themselves on the map.",
+   "activityBucket": "Research support & infrastructure",
+   "orgType": "nonprofit",
+   "geography": "UK",
+   "frontierRelevance": "The Wayfinding Problem",
+   "links": [
+    {
+     "label": "Website (made up)",
+     "url": "https://example.com/trailworks"
+    },
+    {
+     "label": "Careers (made up)",
+     "url": "https://example.com/trailworks/jobs"
+    }
+   ],
+   "myNotes": "",
+   "orgTypeNote": "",
+   "topics": [
+    "forecasting & measurement",
+    "education & learning"
+   ],
+   "city": "Sheffield",
+   "country": "UK",
+   "region": "UK & Ireland",
+   "safety": "programme",
+   "safetyNote": "Runs a route-safety programme alongside its research (made up, like everything on this card).",
+   "openness": "open",
+   "opennessNote": "Publishes its datasets.",
+   "workMode": "hybrid",
+   "workModeNote": "Two days a week in Sheffield.",
+   "eligibilityNote": "Most roles ask for UK right to work.",
+   "stance": "Paths-as-evidence: study what walkers do before designing for them.",
+   "contacts": [
+    {
+     "label": "General enquiries (made up)",
+     "url": "mailto:hello@example.com"
+    }
+   ],
+   "opportunities": [
+    {
+     "kind": "job",
+     "label": "Research Assistant, path persistence",
+     "url": "https://example.com/trailworks/jobs/ra",
+     "status": "open",
+     "asOf": "2026-09-15",
+     "deadline": "2026-10-10",
+     "stipend": "32,000 to 36,000 pounds a year",
+     "eligibility": "A first degree in any field and a season of fieldwork; UK right to work.",
+     "workMode": "hybrid"
+    },
+    {
+     "kind": "fellowship",
+     "label": "Winter Fellowship (six months)",
+     "url": "https://example.com/trailworks/fellowship",
+     "status": "upcoming",
+     "asOf": "2026-09-15",
+     "deadline": "2026-11-30",
+     "stipend": "2,400 pounds a month",
+     "eligibility": "Career changers welcome; a written proposal of one page.",
+     "workMode": "onsite"
+    },
+    {
+     "kind": "job",
+     "label": "Operations Manager",
+     "url": "https://example.com/trailworks/jobs/ops",
+     "status": "closed",
+     "asOf": "2026-09-15",
+     "deadline": "2026-08-31",
+     "stipend": "",
+     "eligibility": "Filled in September.",
+     "workMode": "hybrid"
+    }
+   ],
+   "engagement": "",
+   "depth": "full",
+   "checkedOn": "2026-09-15",
+   "provenance": "Sample card. On a real card this line says which of the organisation's own pages were read, on what date and in which language; for example: About and Careers pages read 15 September 2026, in English.",
+   "latlng": [
+    53.4,
+    -1.5
+   ],
+   "approxLocation": false,
+   "researchRelevance": ""
+  },
+  {
+   "id": "ex-plat-waymark",
+   "type": "platform",
+   "title": "Waymark (fictional job board)",
+   "source": "",
+   "tags": [
+    "example",
+    "field-map",
+    "stub"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-22T12:00:00.000Z",
+   "modified": "2026-09-22T12:00:00.000Z",
+   "memberships": [
+    {
+     "section": "fieldMap"
+    }
+   ],
+   "blurb": "Sample card: delete me once you have your own. A platform card is a place where careers and courses happen, rather than an organisation doing the work.",
+   "details": "A made-up board listing trail and survey roles. This card is deliberately thin, and says so: depth is stub, and the honest empties are left empty.",
+   "orgType": "commercial",
+   "orgTypeNote": "",
+   "geography": "UK, Global",
+   "activityBucket": "Job boards & opportunity aggregators",
+   "topics": [
+    "economics & labour"
+   ],
+   "frontierRelevance": "",
+   "city": "",
+   "country": "",
+   "region": "Distributed / global",
+   "safety": "not-assessed",
+   "safetyNote": "Nobody has looked yet. not-assessed is not the same as none-found, which would mean the pages were searched and held nothing.",
+   "openness": "not-stated",
+   "opennessNote": "",
+   "workMode": "not-stated",
+   "workModeNote": "",
+   "stance": "",
+   "eligibilityNote": "",
+   "engagement": "",
+   "myNotes": "",
+   "researchRelevance": "",
+   "contacts": [],
+   "links": [
+    {
+     "label": "Site (made up)",
+     "url": "https://example.com/waymark"
+    }
+   ],
+   "opportunities": [
+    {
+     "kind": "job",
+     "label": "Listings refreshed weekly",
+     "url": "https://example.com/waymark/listings",
+     "status": "rolling",
+     "asOf": "2026-09-22",
+     "deadline": null,
+     "stipend": "",
+     "eligibility": "",
+     "workMode": "not-stated"
+    }
+   ],
+   "depth": "stub",
+   "checkedOn": "2026-09-22",
+   "provenance": "Sample card. The site's own listings page, read 22 September 2026, in English. Nothing else was read, which is why this card is a stub.",
+   "locations": [],
+   "latlng": null,
+   "approxLocation": false
+  }
+ ]
+}

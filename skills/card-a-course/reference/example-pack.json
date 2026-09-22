@@ -1,0 +1,344 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "ex-courseunit-1",
+   "type": "courseUnit",
+   "title": "Unit 1: Reading the Ground",
+   "source": "Cairn example deck",
+   "tags": [
+    "example",
+    "course",
+    "courseUnit"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "course",
+   "courseId": "ex-guide-trailcraft-101",
+   "unitKey": "unit-1",
+   "order": 1,
+   "description": "Sample card: delete me once you have your own. A unit card introduces a block of the course. This pretend unit covers how paths form and how walkers read terrain.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-syllabus-1-1",
+   "type": "syllabus",
+   "title": "Unit 1.1 - Why paths go where they go",
+   "source": "Cairn example deck",
+   "tags": [
+    "example",
+    "course",
+    "syllabus"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "course": "ex-guide-trailcraft-101",
+     "unitKey": "unit-1"
+    }
+   ],
+   "subLabel": "1.1",
+   "intro": "Sample card: delete me once you have your own. A syllabus card defines a sub-unit: its intro text, learning outcomes, and the reading list below. Content cards point at this card to appear under it.",
+   "learningOutcomes": "Understand desire lines; explain why the oldest path is rarely the straightest.",
+   "duration": "45 min",
+   "resources": [
+    {
+     "title": "The Old Ways of Walking (fictional)",
+     "required": true,
+     "author": "A. Vega",
+     "year": "2019",
+     "readTime": "20 min",
+     "linkWritten": "https://example.com/old-ways",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Old Ways of Walking"
+    },
+    {
+     "title": "Desire Lines: a field guide (fictional)",
+     "required": false,
+     "author": "K. Moss",
+     "year": "2021",
+     "readTime": "15 min",
+     "linkWritten": "https://example.com/desire-lines",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Desire Lines"
+    }
+   ],
+   "resourceProgress": {},
+   "myNotes": ""
+  },
+  {
+   "id": "ex-concept-desire-lines",
+   "type": "concept",
+   "title": "A path is a record of decisions, not a design",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "concept"
+   ],
+   "relatedIds": [
+    "ex-inst-trailworks"
+   ],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "definition": "Sample card: delete me once you have your own. The definition field holds the idea in two clean sentences. Desire lines are the unofficial paths worn by walkers choosing, again and again, a route the planners did not draw.",
+   "anchor": "The anchor ties the idea to something in the course: in Unit 1.1's reading, the shortcut across the meadow that becomes the real path.",
+   "metaphor": "The metaphor gives the idea a picture: every desire line is a vote, counted in footprints.",
+   "whyItMatters": "This field says why you should care: systems reveal what people actually do, not what they were told to do.",
+   "researchRelevance": "",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-glossary-cairn",
+   "type": "glossary",
+   "title": "cairn",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "glossary"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "term": "cairn",
+   "expansion": "a stack of stones marking a route",
+   "definition": "Sample card: delete me once you have your own. A glossary card pins a term. A cairn is a human-made stack of stones that marks a path where the ground itself gives no clues.",
+   "example": "'Follow the cairns above the treeline.'",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cast-vega",
+   "type": "cast",
+   "title": "Alma Vega (fictional)",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "cast"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "role": "Sample card: delete me once you have your own. A cast card holds a person the course keeps meeting. Vega is our invented trail historian, author of the Unit 1.1 reading.",
+   "stance": "Paths-as-memory school; sceptical of top-down trail design.",
+   "keyWorks": [
+    {
+     "label": "The Old Ways of Walking (fictional)",
+     "url": "https://example.com/old-ways"
+    }
+   ],
+   "anchor": "Appears in Unit 1.1 and again on the Further Reading shelf, one person, two homes: that is what memberships are for.",
+   "whyTheyMatter": "Cast cards stop a new field feeling like a wall of strangers.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-actor-wardens",
+   "type": "actor",
+   "title": "Mountain Wardens (fictional)",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "actor"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "role": "Institution",
+   "whoAreThey": "• An actor card maps a GROUP with power in the field.\n• The Wardens maintain official trails.",
+   "whatTheyWant": "• Safe, durable, maintainable routes.",
+   "whatTheyFear": "• Erosion; rescue callouts; desire lines undoing their work.",
+   "whatTheyCanDo": "• Close routes; build cairns; redirect walkers.",
+   "whatTheyHaveDone": "• Paved the meadow shortcut after twenty years of footprints won.",
+   "whatLimitsThem": "• Budget; weather; the fact that walkers vote with their feet.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-exercise-first-walk",
+   "type": "exercise",
+   "title": "Exercise: map your own desire line",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "exercise"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "prompt": "Sample card: delete me once you have your own. An exercise card holds a course exercise and YOUR answer, kept together. Prompt: think of a shortcut you take daily that no one designed. Why does it beat the official route? Write three sentences below.",
+   "userResponse": "",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-question-who-decides",
+   "type": "question",
+   "title": "Who decides where the path goes?",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "question"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "track": "",
+   "question": "Sample card: delete me once you have your own. A question card holds an open question you are not ready to answer. If paths are ledgers of past walkers' decisions, who is accountable when the path leads somewhere harmful?",
+   "currentThinking": "Current thinking: no one and everyone, which is exactly why it stays an open question card and not a thesis.",
+   "whyItMatters": "Question cards invite attack, in research communities, that is how collaborators are found.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-tension-build-vs-follow",
+   "type": "tension",
+   "title": "Build the path vs follow the walkers",
+   "source": "Desire Lines: a field guide",
+   "tags": [
+    "example",
+    "course",
+    "tension"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "track": "",
+   "partyA": "The Wardens (and all planners)",
+   "claimA": "Routes should be designed: safety, drainage and durability require foresight that footprints do not have.",
+   "partyB": "The desire-line school (Vega)",
+   "claimB": "Routes should be discovered: accumulated walker decisions encode knowledge no planner can survey.",
+   "crux": "Sample card: delete me once you have your own. The crux field names the actual disagreement: whether local knowledge in footprints outweighs engineering foresight, measurable, in principle, by the Path Persistence Score.",
+   "whereItAppears": "Unit 1.1's reading vs the Wardens' trail manual (fictional).",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-lib-old-ways",
+   "type": "library",
+   "title": "The Old Ways of Walking (fictional)",
+   "source": "The Old Ways of Walking",
+   "tags": [
+    "example",
+    "course",
+    "library"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "author": "Alma Vega",
+   "year": "2019",
+   "mediaType": "Book",
+   "status": "Reading",
+   "summary": "Sample card: delete me once you have your own. A library card is one resource on your shelf: an honest one-line summary, your reading status, and later your notes.",
+   "whyItMatters": "It is Unit 1.1's required reading AND on Vega's shelf, one card, two homes, via memberships.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-guide-trailcraft-101",
+   "type": "guide",
+   "title": "Trailcraft 101",
+   "sectionRoot": "course",
+   "blurb": "A whole course, carded reading by reading: every resource with its link, every exercise with your answer in it, and every idea it teaches turned into a card you can search, hear and link.",
+   "description": "A course as a study companion: units and sub-units as the syllabus lays them out, each reading with what it is and how long it takes, and the concepts, tensions, frameworks, people and stories each reading contains as cards of their own. It is the shape for any course you are taking: a university module, a professional certificate, a reading group. Courses shown are loaded as approved by their providers.",
+   "howToUse": "Walk the syllabus. Each unit is a row in the spine. Open a sub-unit and its syllabus card lists the readings, Required, Optional, or Added by author when the deck's owner brought something in, with the link, the author, the time it takes, and a Listen to article link where an audio version exists. Two small ticks per reading, reviewed and flashcards done, keep your place.\n\nLearn the reading, not only the summary. Under each reading sit its cards: a concept with its definition, an anchor (the memorable hook), a metaphor and why it matters; a tension with both parties, their claims and the crux; a framework with when to use it; the people, called cast, with their stance and key works; a story told as a metaphor; the glossary, whose terms light up wherever they appear in the deck. The cards cluster under the reading they came from, automatically, by source.\n\nDo the exercises in the card. Each exercise carries its prompt and a space for your answer, with formatting. Use template fills a structure the author left; the status chip goes Not started, Ongoing, Done as you work. Your answers are yours: they are not searchable by default and they export only when you tick the box.\n\nHear a unit on a walk. Play All on a sub-unit reads the syllabus, then each card, in order, with the field names spoken so you know where you are. The read-along toggle expands the list on screen in the same order.\n\nHand your work to a reviewer. Export this course's exercises, every prompt with your answer under it, headed by unit, as a Word file. Or export everything you have written across the deck, or one unit, or one card. This is how a peer, a tutor or an AI reviewer sees exactly what you did.\n\nBridge to your own work. Cards that bear on your research carry a Research relevance line, the author's note on what this reading contributes to which thesis, and the related-cards list takes you there. The course is not sealed off from what you are building.\n\nMark and hide. Star, done, hide done. Your progress is a filter, not a spreadsheet.",
+   "aiWorkflow": "Give your assistant this guide, the card forms for syllabus, concept, tension, framework, cast, story and glossary, and the syllabus page. Ask for the structure first (units, sub-units, readings with links and times) and then, reading by reading, the content cards, each with an anchor written to be remembered, its source named, and nothing invented. Import the structure first and the cards after, and read every card before you trust it. If Cairn's GitHub page has a skill for courses, it does this with less setting up. A course's owner may need to grant permission before a carded course is shared onward.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [
+    "example",
+    "course",
+    "guide"
+   ],
+   "curriculum": "Trailcraft 101"
+  }
+ ]
+}
