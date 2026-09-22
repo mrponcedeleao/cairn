@@ -48,8 +48,8 @@
       --c-platform:    #0f766e;
       --c-guide:       var(--accent);
       --c-frontier:    #6a7231;
-      --c-cairn-plan:         #1f6f43;
-      --c-cairn-checkin:      #4d7a29;
+      --c-cairn-plan:         #41786f;
+      --c-cairn-checkin:      #687249;
       --c-cairn-goal:         #2e7c47;
       --c-cairn-phase:        #7c5b3a;
       --c-cairn-baseline:     #6e6e64;
@@ -64,7 +64,7 @@
       --text-muted:   #5b6271;
       --text-subtle:  #606572;
       --toggle-active-fill: color-mix(in srgb, var(--accent) 14%, var(--surface));
-      --accent:       var(--c-concept);
+      --accent:       #497227;
       --accent-text:  var(--accent);
       --danger-text:  #b91c1c;
       --exercise-box-bg: color-mix(in srgb, var(--c-exercise) 14%, var(--surface));
@@ -103,14 +103,14 @@
       --c-evidence:       #65a314;
       --c-institution:    #97928b;
       --c-platform:       #15a398;
-      --c-cairn-plan:     #2ea564;
+      --c-cairn-plan:     #559f92;
       --c-cairn-phase:    #b58a60;
       --c-cairn-baseline: #939388;
       --c-cairn-boundary: #8395a7;
       --c-exercise:   #f36317;
       --c-syllabus:   #089fc3;
-      --accent:       #1b4fff;
-      --accent-text:  var(--c-concept);
+      --accent:       #497227;
+      --accent-text:  #63a230;
       --c-guide:      var(--accent-text);
       --danger-text:  #e75e5e;
       --border-strong: #536779;
@@ -122,7 +122,7 @@
       --c-library:        #db7806;
       --c-question:       #d4a700;
       --c-frontier:       #8f9942;
-      --c-cairn-checkin:  #6aa839;
+      --c-cairn-checkin:  #8a9861;
       --c-cairn-goal:     #3ea55e;
       --c-cairn-uncertainty:#7a96a8;
       --c-cairn-opportunity:#c9971c;
@@ -192,6 +192,7 @@
     .tts-cloud-masked { font-family: ui-monospace, Menlo, monospace; font-size: 14px; color: var(--text-muted); margin-right: auto; }
     .tts-cloud-note, .tts-cloud-status { display: block; font-size: 12px; color: var(--text-subtle); margin: 6px 0 0; }
     .tts-cloud-status { color: var(--text-muted); }
+    .tts-cloud-raw { display: block; font-size: 11px; color: var(--text-subtle); margin: 2px 0 0; overflow-wrap: anywhere; }
     .tts-cloud-cache { margin: 0 auto 0 0; }
     .r31-node[hidden] { display: none; }
     .r31-twist { flex: 0 0 auto; width: 16px; text-align: center; color: var(--text-muted); cursor: pointer;
@@ -248,13 +249,15 @@
       margin-right: 8px;
       flex-shrink: 0;
     }
-    .brand .dot {
+    .cairn-mark {
       display: inline-block;
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      margin-right: 6px;
-      transform: translateY(-1px);
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACiCAYAAACajYUCAAAWfmNhQlgAABZ+anVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAAFlhqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOjUxOTJjM2ZmLTFjYjctNDc0ZS1hYzM3LTdlNjMwOTNiYzljNAAAAAOTanVtYgAAAClqdW1kYzJhcwARABCAAACqADibcQNjMnBhLmFzc2VydGlvbnMAAAAAuGp1bWIAAABEanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5pbmdyZWRpZW50LnYzAAAAABhjMnNoCo4VXodVo1Auw5afes32MAAAAGxjYm9yo2lkYzpmb3JtYXRpaW1hZ2UvcG5namluc3RhbmNlSUR4LHhtcDppaWQ6NWIzN2I0ODUtYTE5MS00ZTU4LTk3MTYtNzFjNzk4MTdjMTlmbHJlbGF0aW9uc2hpcGhwYXJlbnRPZgAAAeJqdW1iAAAAQWp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuYWN0aW9ucy52MgAAAAAYYzJzaIOYBHOsNr2ZKBT5CdWnNG8AAAGZY2JvcqJnYWN0aW9uc4KiZmFjdGlvbmtjMnBhLm9wZW5lZGpwYXJhbWV0ZXJzoWtpbmdyZWRpZW50c4GiY3VybHgtc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5pbmdyZWRpZW50LnYzZGhhc2hYIDx6MUIQxlffKzITauyvP+pXXwxRp+4n3cFYcpuz4MIupGZhY3Rpb254HWNvbS5hbnRocm9waWMuY2xhdWRlLnByb3ZpZGVkanBhcmFtZXRlcnOheB9jb20uYW50aHJvcGljLm9yaWdpbi1jb25maWRlbmNlZ3Vua25vd25rZGVzY3JpcHRpb254ZkNsYXVkZSBwcm92aWRlZCB0aGlzIGZpbGUgYXQgdGhlIHJlcXVlc3Qgb2YgYSB1c2VyIGFuZCBtYXkgaGF2ZSBjcmVhdGVkIG9yIG1vZGlmaWVkIHRoZSBmaWxlIGNvbnRlbnRzLm1zb2Z0d2FyZUFnZW50oWRuYW1lZkNsYXVkZXJhbGxBY3Rpb25zSW5jbHVkZWT1AAAAyGp1bWIAAABAanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5oYXNoLmRhdGEAAAAAGGMyc2ghNjPSCofgTLP1VoPYIU+WAAAAgGNib3KlY2FsZ2ZzaGEyNTZjcGFkTQAAAAAAAAAAAAAAAABkaGFzaFgg9xuLCHbStNBFxjr3at9cmOnDIgQ0+7fM1becW5QtdsVkbmFtZW5qdW1iZiBtYW5pZmVzdGpleGNsdXNpb25zgaJlc3RhcnQYIWZsZW5ndGgZFooAAAI+anVtYgAAACdqdW1kYzJjbAARABCAAACqADibcQNjMnBhLmNsYWltLnYyAAAAAg9jYm9ypWNhbGdmc2hhMjU2aXNpZ25hdHVyZXhNc2VsZiNqdW1iZj0vYzJwYS91cm46YzJwYTo1MTkyYzNmZi0xY2I3LTQ3NGUtYWMzNy03ZTYzMDkzYmM5YzQvYzJwYS5zaWduYXR1cmVqaW5zdGFuY2VJRHgseG1wOmlpZDo0Zjg3ODM0Mi0zOGY1LTRiZTAtODRjOS1lZTU0NGI2ZDFiNjdyY3JlYXRlZF9hc3NlcnRpb25zg6JjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggPHoxQhDGV98rMhNq7K8/6ldfDFGn7ifdwVhym7Pgwi6iY3VybHgqc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5hY3Rpb25zLnYyZGhhc2hYIGGo2rwG6SijK0+ah0hzG3zyC9kSAKnoidSSGf9We5t8omN1cmx4KXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaGFzaC5kYXRhZGhhc2hYIEeRPabWaCUoTrYGOsQpSeFuTkvYU7iXivwPni7NjRBYdGNsYWltX2dlbmVyYXRvcl9pbmZvo2RuYW1lb0FudGhyb3BpYyBGaWxlc2d2ZXJzaW9uZTEuMC4wa3NwZWNWZXJzaW9uZTIuNC4wAAAQOGp1bWIAAAAoanVtZGMyY3MAEQAQgAAAqgA4m3EDYzJwYS5zaWduYXR1cmUAAAAQCGNib3LShFkCEqIBJhghWQIKMIICBjCCAY2gAwIBAgIUQOWgCu7COdC+uIP6BkIFPWdVEwAwCgYIKoZIzj0EAwMwSTEXMBUGA1UEChMOQW50aHJvcGljLCBQQkMxLjAsBgNVBAMTJUFudGhyb3BpYyBDb250ZW50IENyZWRlbnRpYWxzIFJvb3QgQ0EwHhcNMjYwODA3MTg0MzU2WhcNMjgwODA2MTk0MzU2WjBEMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEpMCcGA1UEAxMgQW50aHJvcGljIENsYXVkZSBDb250ZW50IFNpZ25pbmcwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASYegpry1AYBRTVNL1CpTlbROnY3dey+UrsF9C3phYrATN3ZHf93Mo8RQN0KOUuOn19P4oWNFWe5n2/She9N7eTo1gwVjAOBgNVHQ8BAf8EBAMCB4AwFQYDVR0lBA4wDAYKKwYBBAGD6F4CATAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFM5R4gSBTmRbI/jjxM+aPpzB11zCMAoGCCqGSM49BAMDA2cAMGQCMDFzHRSeAXrSy1WOzkbhPZ6Km2wGTmZ/2gK18k8BQGXyqz88Rdrz6CTX9flAnYNVxgIwcF9c3fVhqmJKpi+UhasNUMko69cyX6STPfta3Q8EjyzDjzoyrol46FP6VFHhvUcJoWNwYWRZDZ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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") center / contain no-repeat;
+    }
+    .brand .brand-mark {
+      width: 16px; height: 19px;
+      margin-right: 8px;
+      vertical-align: middle;
+      transform: translateY(-2px);
     }
     .brand .deck-name {
       font-weight: 400;
@@ -264,8 +267,10 @@
       letter-spacing: 0;
     }
     .brand .deck-name[hidden] { display: none; }
+    body.no-deck .filter-row, body.no-deck .filter-bar, body.no-deck .brand .deck-name { display: none; }
     @media (max-width: 480px) {
       .brand .deck-name { display: none; }
+      .brand .brand-mark { width: 14.3px; height: 17px; margin-right: 7px; }
     }
     .search-wrap {
       position: relative;
@@ -1527,6 +1532,45 @@
       margin-top: 24px;
       line-height: 1.5;
     }
+    .empty-state.welcome { max-width: 456px; margin: 0 auto; padding: 18px 4px 24px; text-align: left; }
+    .empty-state.welcome h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; margin: 0;
+      text-align: center; white-space: nowrap; }
+    .empty-state.welcome .hero-mark { width: 23.5px; height: 28px; margin-left: 11px; vertical-align: baseline; }
+    .empty-state.welcome .empty-main p { margin: 14px 0 0; font-size: 16.5px; line-height: 1.55; color: var(--text-muted); }
+    .empty-state.welcome .actions { display: flex; flex-direction: column; gap: 11px; max-width: none; margin: 26px 0 0; }
+    .empty-state.welcome .actions .btn { height: 52px; min-height: 52px; padding: 0 18px; border-radius: 12px;
+      font-size: 16.5px; font-weight: 600; }
+    .empty-state.welcome .actions .btn.primary { font-weight: 700; }
+    .empty-state.welcome .empty-hints { margin: 22px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px;
+      font-size: 14px; line-height: 1.5; color: var(--text-muted); text-align: justify; }
+    .empty-state.welcome .empty-rule { height: 1px; background: var(--border); margin: 18px 0 14px; }
+    .empty-state.welcome .empty-offline { display: block; margin: 0; font-size: 13px; line-height: 1.5;
+      color: var(--text-subtle); text-align: justify; }
+    @media (max-width: 359px) { .empty-state.welcome h1 { white-space: normal; } }
+    @media (min-width: 1024px) {
+      body:not(.panel-open) .empty-state.welcome { max-width: none; width: 920px; margin-left: calc(50% - 460px); display: grid;
+        grid-template-columns: 448px 384px; column-gap: 88px; align-items: start; padding: 92px 0 24px; }
+      body:not(.panel-open) .empty-state.welcome h1 { font-size: 44px; line-height: 1.08; text-align: left; }
+      body:not(.panel-open) .empty-state.welcome .hero-mark { width: 31.1px; height: 37px; margin-left: 14px; }
+      body:not(.panel-open) .empty-state.welcome .empty-main p { margin-top: 16px; font-size: 18px; }
+      body:not(.panel-open) .empty-state.welcome .actions { margin-top: 28px; }
+      body:not(.panel-open) .empty-state.welcome .empty-notes { padding-top: 67px; }
+      body:not(.panel-open) .empty-state.welcome .empty-hints { margin: 0; gap: 12px; font-size: 14.5px; line-height: 1.55; }
+      body:not(.panel-open) .empty-state.welcome .empty-rule { margin: 22px 0 18px; }
+      body:not(.panel-open) .empty-state.welcome .empty-offline { font-size: 13.5px; line-height: 1.55; }
+    }
+    @media (min-width: 1344px) {
+      body.panel-open .empty-state.welcome { max-width: none; width: 920px; margin-left: calc(50% - 460px); display: grid;
+        grid-template-columns: 448px 384px; column-gap: 88px; align-items: start; padding: 92px 0 24px; }
+      body.panel-open .empty-state.welcome h1 { font-size: 44px; line-height: 1.08; text-align: left; }
+      body.panel-open .empty-state.welcome .hero-mark { width: 31.1px; height: 37px; margin-left: 14px; }
+      body.panel-open .empty-state.welcome .empty-main p { margin-top: 16px; font-size: 18px; }
+      body.panel-open .empty-state.welcome .actions { margin-top: 28px; }
+      body.panel-open .empty-state.welcome .empty-notes { padding-top: 67px; }
+      body.panel-open .empty-state.welcome .empty-hints { margin: 0; gap: 12px; font-size: 14.5px; line-height: 1.55; }
+      body.panel-open .empty-state.welcome .empty-rule { margin: 22px 0 18px; }
+      body.panel-open .empty-state.welcome .empty-offline { font-size: 13.5px; line-height: 1.55; }
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -1559,27 +1603,18 @@
     .btn.danger { color: var(--danger-text); border-color: color-mix(in srgb, var(--danger-text) 30%, var(--border)); }
     :root { --bottom-bar-extra: 0px; }
     body.queue-active { --bottom-bar-extra: 92px; }
-    .fab {
-      position: fixed;
-      right: max(16px, env(safe-area-inset-right));
-      bottom: calc(20px + var(--bottom-bar-extra) + env(safe-area-inset-bottom));
-      width: 56px; height: 56px;
-      border-radius: 50%;
-      background: var(--accent);
-      color: white;
-      box-shadow: var(--shadow-lg);
-      z-index: 25;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 150ms ease, filter 150ms ease, bottom 150ms ease;
-    }
-    .fab:hover { filter: brightness(1.06); transform: translateY(-1px); }
-    .fab svg { width: 24px; height: 24px; }
+    .tabs-row { display: flex; align-items: center; gap: 6px; width: fit-content; max-width: 100%; margin: 0 auto; padding-left: 12px; box-sizing: border-box; }
+    .tabs-row > .tabs-viewport { flex: 0 1 auto; min-width: 0; margin: 0; }
+    .tabs-row .tabs-inner { padding-left: 0; }
+    .tab-add { flex: 0 0 auto; width: var(--pill-h); height: var(--pill-h); border-radius: 50%; border: 0; padding: 0; background: var(--accent);
+      color: white; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: var(--shadow-sm); }
+    .tab-add:hover { filter: brightness(1.08); }
+    .tab-add:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .tab-add svg { width: 18px; height: 18px; }
     .save-pill {
       position: fixed;
       left: max(16px, env(safe-area-inset-left));
-      bottom: calc(20px + 56px + 12px + var(--bottom-bar-extra) + env(safe-area-inset-bottom));
+      bottom: calc(20px + var(--bottom-bar-extra) + env(safe-area-inset-bottom));
       background: var(--c-tension);
       color: white;
       padding: 8px 16px;
@@ -1762,11 +1797,8 @@
       margin-right: 4px;
     }
     body.queue-active { padding-bottom: 120px; }
-    body.is-ios .fab {
-      bottom: calc(20px + var(--bottom-bar-extra) + env(safe-area-inset-bottom, 0px) + 60px);
-    }
     body.is-ios .save-pill {
-      bottom: calc(20px + 56px + 12px + var(--bottom-bar-extra) + env(safe-area-inset-bottom, 0px) + 60px);
+      bottom: calc(20px + var(--bottom-bar-extra) + env(safe-area-inset-bottom, 0px) + 60px);
     }
     body.is-ios .queue-mini-player {
       bottom: calc(8px + env(safe-area-inset-bottom, 0px) + 60px);
@@ -1791,9 +1823,6 @@
       cursor: pointer;
     }
     .patch-btn.visible { display: inline-flex; }
-    @media (pointer: coarse) {
-      .fab { right: auto; left: max(16px, env(safe-area-inset-left)); }
-    }
     .result-list {
       display: flex;
       flex-direction: column;
@@ -2048,6 +2077,7 @@
       max-width: 300px;
     }
     .fm-table .fm-muted { color: var(--text-muted); }
+    .fm-table .fm-num { text-align: center; font-variant-numeric: tabular-nums; }
     .fm-table .fm-unstated { color: var(--text-subtle); font-style: italic; }
     .fm-table .fm-type-dot {
       display: inline-block;
@@ -2755,6 +2785,15 @@
       color: var(--accent-text);
       background: color-mix(in srgb, var(--accent) 12%, var(--surface));
     }
+    @supports not selector(::-webkit-scrollbar) { .panel-body { scrollbar-width: thin; scrollbar-color: var(--text-subtle) transparent; } }
+    .panel-body::-webkit-scrollbar { width: 10px; }
+    .panel-body::-webkit-scrollbar-track { background: transparent; }
+    .panel-body::-webkit-scrollbar-thumb { background: var(--text-subtle); border-radius: 5px; border: 3px solid transparent; background-clip: content-box; }
+    .panel-body::-webkit-scrollbar-thumb:hover { background: var(--text-muted); background-clip: content-box; }
+    @supports not selector(::-webkit-scrollbar) { html[data-theme="dark"] { scrollbar-color: var(--text-subtle) var(--bg); } }
+    html[data-theme="dark"]::-webkit-scrollbar { width: 12px; height: 12px; }
+    html[data-theme="dark"]::-webkit-scrollbar-track { background: var(--bg); }
+    html[data-theme="dark"]::-webkit-scrollbar-thumb { background: var(--text-subtle); border-radius: 6px; border: 3px solid var(--bg); }
     .panel-body {
       flex: 1;
       overflow-y: auto;
@@ -2788,6 +2827,7 @@
       padding: 0;
       transition: background 0.12s, color 0.12s, border-color 0.12s;
     }
+    .panel-toolbar a.toolbar-btn { text-decoration: none; }
     .panel-toolbar .toolbar-btn:hover {
       background: var(--accent);
       color: white;
@@ -2833,15 +2873,6 @@
     }
     .about-popover .about-label { color: var(--text-muted); }
     .about-popover .about-value { color: var(--text); font-weight: 500; }
-    .about-popover .about-disclaimer {
-      margin-top: 8px;
-      padding-top: 8px;
-      border-top: 1px solid var(--border);
-      font-size: 12px;
-      color: var(--text-muted);
-      font-style: italic;
-      line-height: 1.4;
-    }
     .course-tree { display: flex; flex-direction: column; gap: 2px; }
     .tree-row {
       display: flex;
@@ -2938,6 +2969,7 @@
     .tree-unit.is-section-head:hover {
       background: color-mix(in srgb, var(--section-color, var(--c-guide)) 12%, transparent);
     }
+    .tree-row.tree-curriculum-header.active { background: color-mix(in srgb, var(--section-color, var(--c-guide)) 20%, transparent); }
     .tree-curriculum-header .tree-main {
       font-weight: 600;
       color: var(--section-color, var(--c-guide));
@@ -3102,17 +3134,17 @@
 
   <header class="header">
     <div class="header-row">
-      <button class="icon-btn menu-btn" id="btn-menu" title="Course structure" aria-label="Open course structure panel" aria-expanded="false" aria-controls="side-panel">
+      <button class="icon-btn menu-btn" id="btn-menu" title="Menu" aria-label="Open the menu" aria-expanded="false" aria-controls="side-panel">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <div class="brand"><span class="dot"></span>Cairn<span class="deck-name" id="deck-name" hidden></span></div>
+      <div class="brand"><span class="cairn-mark brand-mark" aria-hidden="true"></span>Cairn<span class="deck-name" id="deck-name" hidden></span></div>
       <div class="search-wrap">
         <span class="icon" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </span>
         <input type="search" id="search" placeholder="Search cards…" autocomplete="off" inputmode="search" aria-label="Search cards">
       </div>
-      <button class="icon-btn" id="btn-import" title="Import JSON" aria-label="Import JSON">
+      <button class="icon-btn" id="btn-import" title="Import — add cards to your deck from a JSON file: a patch saved on your phone, a card pack, or cards a colleague sent you. Your deck stays; the cards are added." aria-label="Import cards from a JSON file">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </button>
       <button class="icon-btn" id="btn-settings" title="Settings" aria-label="Settings">
@@ -3122,6 +3154,10 @@
   </header>
 
   <nav class="tabs" id="tabs" aria-label="Card categories">
+    <div class="tabs-row">
+    <button type="button" class="tab-add" id="fab" title="Add card" aria-label="Add new card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
     <div class="tabs-viewport">
       <button type="button" class="tab-scroll tab-scroll-left" id="tab-scroll-left" aria-label="Scroll categories left">
         <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 5 7 10 13 15"/></svg>
@@ -3130,6 +3166,7 @@
       <button type="button" class="tab-scroll tab-scroll-right" id="tab-scroll-right" aria-label="Scroll categories right">
         <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 5 13 10 7 15"/></svg>
       </button>
+    </div>
     </div>
   </nav>
 
@@ -3151,7 +3188,7 @@
     <button class="icon-btn panel-pin" id="panel-pin" aria-label="Pin panel open" aria-pressed="false" title="Pin panel open">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="17" x2="12" y2="22"/><path d="M9 2h6l-1 7 3 3v2H7v-2l3-3-1-7z"/></svg>
     </button>
-    <button class="icon-btn" id="panel-close" aria-label="Close course structure panel">
+    <button class="icon-btn" id="panel-close" aria-label="Close the menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
   </header>
@@ -3162,9 +3199,9 @@
     <button class="toolbar-btn" id="nav-add-structure" aria-label="Structure cards" title="Create, edit, or delete structure cards — guides, frontiers, course units, Further Reading principals.">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12h-8"/><path d="M21 6H8"/><path d="M21 18h-8"/><path d="M3 6v4c0 1.1.9 2 2 2h3"/><path d="M3 10v6c0 1.1.9 2 2 2h3"/></svg>
     </button>
-    <button class="toolbar-btn" id="nav-github" aria-label="Course-making skills" title="Open the GitHub toolkit — skills and templates for building courses and field-map cards." disabled>
+    <a class="toolbar-btn" id="nav-github" href="https://github.com/mrponcedeleao/cairn" target="_blank" rel="noopener" aria-label="Cairn on GitHub" title="Cairn on GitHub">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-    </button>
+    </a>
     <button class="toolbar-btn" id="panel-clear-course" aria-label="Clear navigation map filters" title="Clear the current navigation-map filters before browsing.">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
@@ -3177,18 +3214,15 @@
     <button class="toolbar-btn" id="nav-theme" aria-label="Switch to dark mode" title="Switch to dark mode">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
     </button>
-    <button class="toolbar-btn" id="nav-contact" aria-label="Contact the author" title="Get in touch with the author." disabled>
+    <a class="toolbar-btn" id="nav-contact" href="mailto:cairn.app.feedback@gmail.com" aria-label="Email Cairn feedback and support" title="Feedback and support: cairn.app.feedback@gmail.com">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-    </button>
+    </a>
   </div>
   <div class="panel-body" id="panel-body"></div>
 </aside>
 
 <div class="popover" id="popover" role="menu" aria-hidden="true" hidden></div>
 
-<button class="fab" id="fab" title="Add card" aria-label="Add new card">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-</button>
 
 <button class="save-pill" id="save-pill" type="button">
   <span id="save-pill-text">Unsaved changes — Save</span>
@@ -3277,6 +3311,7 @@
 'use strict';
 const DECK_NAMES = {
   'atlas-data.json':              'AGI Strategy',
+  'cairn-deck.json':              'AGI Strategy',
   'atlas-fundamentals-data.json': 'Fundamentals',
 };
 function deckNameFromFilename(filename) {
@@ -3511,8 +3546,6 @@ const TYPES = {
     keyField: 'blurb',
     fields: [
       { key: 'blurb',             label: 'One-line summary',                          type: 'text' },
-      { key: 'details',           label: 'Expanded description',                      type: 'textarea', long: true },
-      { key: 'activityBucket',    label: 'Activity bucket',                           type: 'text', suggest: true, help: 'what this org or tool mainly does, its category in the Field Map taxonomy. Choose "Other…" to add a category the list does not have yet; it joins the list next time.' },
       { key: 'orgType',           label: 'Organisation type',                         type: 'text',
         enum: ORG_TYPE_VOCABULARY,
         help: 'the kind of organisation it is (lab, funder, nonprofit…). Choose "Other…" to add a type the list does not have yet; it joins the list next time.' },
@@ -3521,6 +3554,8 @@ const TYPES = {
       { key: 'geography',         label: 'Geography',                                 type: 'multiselect', optionsFrom: 'data', valueShape: 'csv', suggest: true,
         otherPlaceholder: 'Type custom regions, comma-separated',
         help: 'the countries or regions it mainly operates in. Many values allowed — tap to toggle. Choose "Other…" to add one the list does not have yet; that box alone is comma-separated, so several can be typed at once.' },
+      { key: 'activityBucket',    label: 'Activity bucket',                           type: 'text', suggest: true, help: 'what this org or tool mainly does, its category in the Field Map taxonomy. Choose "Other…" to add a category the list does not have yet; it joins the list next time.' },
+      { key: 'details',           label: 'Expanded description',                      type: 'textarea', long: true },
       { key: 'frontierRelevance', label: 'Frontier(s) touched',                       type: 'multiselect', optionsFrom: 'data', valueShape: 'csv', suggest: true,
         otherPlaceholder: 'Type custom frontiers, comma-separated',
         help: 'which research frontier(s) this org or tool touches. Many values allowed — tap to toggle; the "Other…" box alone is comma-separated, so several can be typed at once. This is only the research cross-link; to also show it in a course unit, set that separately in placement.' },
@@ -3602,8 +3637,6 @@ const TYPES = {
     keyField: 'blurb',
     fields: [
       { key: 'blurb',             label: 'One-line summary',                          type: 'text' },
-      { key: 'details',           label: 'Expanded description',                      type: 'textarea', long: true },
-      { key: 'activityBucket',    label: 'Activity bucket',                           type: 'text', suggest: true, help: 'what this org or tool mainly does, its category in the Field Map taxonomy. Choose "Other…" to add a category the list does not have yet; it joins the list next time.' },
       { key: 'orgType',           label: 'Organisation type',                         type: 'text',
         enum: ORG_TYPE_VOCABULARY,
         help: 'the kind of organisation it is (lab, funder, nonprofit…). Choose "Other…" to add a type the list does not have yet; it joins the list next time.' },
@@ -3612,6 +3645,8 @@ const TYPES = {
       { key: 'geography',         label: 'Geography',                                 type: 'multiselect', optionsFrom: 'data', valueShape: 'csv', suggest: true,
         otherPlaceholder: 'Type custom regions, comma-separated',
         help: 'the countries or regions it mainly operates in. Many values allowed — tap to toggle. Choose "Other…" to add one the list does not have yet; that box alone is comma-separated, so several can be typed at once.' },
+      { key: 'activityBucket',    label: 'Activity bucket',                           type: 'text', suggest: true, help: 'what this org or tool mainly does, its category in the Field Map taxonomy. Choose "Other…" to add a category the list does not have yet; it joins the list next time.' },
+      { key: 'details',           label: 'Expanded description',                      type: 'textarea', long: true },
       { key: 'frontierRelevance', label: 'Frontier(s) touched',                       type: 'multiselect', optionsFrom: 'data', valueShape: 'csv', suggest: true,
         otherPlaceholder: 'Type custom frontiers, comma-separated',
         help: 'which research frontier(s) this org or tool touches. Many values allowed — tap to toggle; the "Other…" box alone is comma-separated, so several can be typed at once. This is only the research cross-link; to also show it in a course unit, set that separately in placement.' },
@@ -4074,11 +4109,21 @@ function uuid() {
     return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
   });
 }
+const DECK_FILE_NAMES = ['cairn-deck.json', 'atlas-data.json'];
 async function tryFetchData() {
+  for (const name of DECK_FILE_NAMES) {
+    let res;
+    try { res = await fetch(new URL('./' + name, location.href).toString(), { cache: 'no-store' }); }
+    catch (e) { continue; }
+    if (!res.ok) continue;
+    const loaded = await tryParseFetched(res);
+    if (loaded) loaded.filename = name;
+    return loaded;
+  }
+  return null;
+}
+async function tryParseFetched(res) {
   try {
-    const url = new URL('./atlas-data.json', location.href).toString();
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) return null;
     const text = await res.text();
     if (!text.trim()) return { cards: [], envelope: { version: 1 } };
     return parseDataString(text);
@@ -4116,7 +4161,7 @@ async function saveData() {
       await writable.close();
       markClean();
       patchRebaseAfterSave();
-      toast('Saved to atlas-data.json', 'success');
+      toast('Saved to ' + (state.currentFilename || 'atlas-data.json'), 'success');
       return;
     } catch (e) {
       console.warn('File handle write failed, falling back to download', e);
@@ -4126,12 +4171,12 @@ async function saveData() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'atlas-data.json';
+  a.download = state.currentFilename || 'atlas-data.json';
   document.body.appendChild(a);
   a.click();
   setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 0);
   markClean();
-  toast('Downloaded atlas-data.json — replace the file in your vault.', 'success', 4500);
+  toast('Downloaded ' + (state.currentFilename || 'atlas-data.json') + ' — replace the copy on your device with it.', 'success', 4500);
 }
 async function saveAsWithPicker() {
   if (typeof window.showSaveFilePicker !== 'function') {
@@ -4287,13 +4332,14 @@ function downloadSessionPatch() {
   if (!p) return;
   const n = p.changes.length + p.deletions.length;
   if (n === 0) { toast('No unsaved changes to download', 'success'); return; }
-  download(cairnPatchFilename(), JSON.stringify(p, null, 2), 'application/json');
+  const patchName = cairnPatchFilename();
+  download(patchName, JSON.stringify(p, null, 2), 'application/json');
   sessionPatch.mem = p;
   sessionPatch.saved = true;
   sessionPatch.lastDownloaded = new Date().toISOString();
   patchWriteBuffer();
   updatePatchButton();
-  toast('Patch downloaded — import it on the desktop.', 'success', 4000);
+  toast('Downloaded ' + patchName + ' — import it into your deck on your computer (the Import button at the top).', 'success', 4000);
 }
 function patchCheckRecovery() {
   if (!sessionPatch.base) return;
@@ -4440,6 +4486,7 @@ function applyPatchImport(p, opts) {
 }
 function deleteCardCascade(card) {
       state.cards = state.cards.filter(c => c.id !== card.id);
+      pruneHistoryToDeck();
       for (const c of state.cards) {
         if (c.relatedIds && c.relatedIds.includes(card.id)) {
           c.relatedIds = c.relatedIds.filter(id => id !== card.id);
@@ -6478,7 +6525,7 @@ function ttsGcpReason(err) {
   if (k === 'offline') return 'offline';
   if (k === 'network') return 'the request did not reach Google';
   if (k === 'http') return ((err.status ? err.status + ' ' : '') + String(err.message || '')).trim().slice(0, 90);
-  if (k === 'play') return 'playback was blocked';
+  if (k === 'play') return 'the sound was blocked';
   return 'unexpected error';
 }
 function ttsGcpMonth() {
@@ -6497,7 +6544,7 @@ function ttsGcpMeterAdd(n) {
   try { localStorage.setItem(LS.gcpTtsChars, JSON.stringify(o)); } catch (e) {   }
 }
 function ttsGcpMeterLine() {
-  return 'This month on this device: ' + ttsGcpMeterRead().chars.toLocaleString('en-GB') + ' characters sent.';
+  return 'Sent to Google this month from this device: ' + ttsGcpMeterRead().chars.toLocaleString('en-GB') + ' characters.';
 }
 function ttsGcpCacheKey(text, voice, rate) {
   return voice + '|' + Number(rate).toFixed(2) + '|' + fnv1a(text) + '|' + text.length;
@@ -6891,13 +6938,29 @@ function ttsGcpFillVoices(sel) {
   }
   sel.value = current;
 }
+function ttsPageFromFile() {
+  try {
+    const proto = String(location.protocol || (String(location.href || '').match(/^[a-z][a-z0-9+.-]*:/i) || [''])[0] || '');
+    return !/^https?:$/i.test(proto) || String(self.origin) === 'null';
+  } catch (e) { return false; }
+}
 function ttsGcpTestMessage(err) {
   const k = err && err.kind;
   if (k === 'http') return (err.status ? err.status + ' · ' : '') + (err.message || 'Google refused the request');
   if (k === 'offline') return 'This device is offline — connect, then press Test again.';
-  return 'The request did not reach Google. If this device is online, the browser is blocking a file opened from your disk from calling Google — tell Quilha; this is the one thing the design depends on.';
+  if (k === 'network') return ttsPageFromFile()
+    ? 'The request did not reach Google. If this device is online, you are probably running Cairn from a file on the device — open it from its web address instead (the GitHub link in the menu), then load your deck and try Test again.'
+    : 'The request did not reach Google. If this device is online, check the connection and press Test again.';
+  if (k === 'play') return 'Google answered, but this browser blocked the sound — press Test again, on the button itself.';
+  return 'Something unexpected happened: ' + String((err && err.message) || 'no message') + '. Try once more. If it repeats, check Google Cloud\'s status page, or report it on Cairn\'s GitHub page (Issues).';
 }
-function ttsGcpTest(status, sel, meterLine) {
+function ttsGcpTestRaw(err) {
+  const k = err && err.kind;
+  if (k === 'http') return (err.status === 400 || err.status === 403) ? 'Check that the key belongs to the project where Text-to-Speech is enabled and is restricted to that API only.' : '';
+  if (k === 'offline') return '';
+  return String((err && err.message) || '');
+}
+function ttsGcpTest(status, sel, meterLine, raw) {
   const key = ttsGcpKey();
   if (!key) return;
   ttsStop();
@@ -6906,6 +6969,7 @@ function ttsGcpTest(status, sel, meterLine) {
   const el = ttsGcpElement();
   if (el) ttsGcpSilence(true);
   status.textContent = 'Testing…';
+  if (raw) raw.textContent = '';
   const voice = ttsGcpVoiceName();
   ttsGcpSynthesize(TTS_GCP_TEST_TEXT, voice, tts.rate, key).then(buf => {
     status.textContent = 'OK · ' + TTS_GCP_TEST_TEXT.length + ' characters · ' + voice;
@@ -6922,6 +6986,7 @@ function ttsGcpTest(status, sel, meterLine) {
     return ttsGcpFetchVoices(key, ttsGcpLang(voice)).then(() => ttsGcpFillVoices(sel), () => {});
   }, err => {
     status.textContent = ttsGcpTestMessage(err);
+    if (raw) raw.textContent = ttsGcpTestRaw(err);
     if (el && gen === ttsEngine.gen) { try { el.pause(); } catch (e) {   } }
   });
 }
@@ -6944,7 +7009,7 @@ function ttsCloudRenderSettings(host, rateNote, ui) {
     return b;
   };
   const source = mk('div', 'tts-source');
-  source.appendChild(mk('div', 'tts-cloud-label', 'Voice source'));
+  source.appendChild(mk('div', 'tts-cloud-label', 'Voice'));
   for (const [value, label] of [['browser', 'This device’s voices'], ['google', 'My Google Cloud voice']]) {
     const row = mk('label', 'tts-source-opt');
     const radio = document.createElement('input');
@@ -7005,13 +7070,15 @@ function ttsCloudRenderSettings(host, rateNote, ui) {
   const meter = mk('p', 'tts-cloud-note tts-cloud-meter', ttsGcpMeterLine());
   if (key && !ui.replacing) {
     const status = mk('p', 'tts-cloud-status');
+    const raw = mk('small', 'tts-cloud-raw');
     const row = mk('div', 'tts-cloud-row');
-    row.appendChild(button('Test', () => ttsGcpTest(status, sel, meter)));
+    row.appendChild(button('Test', () => ttsGcpTest(status, sel, meter, raw)));
     box.appendChild(row);
     box.appendChild(status);
+    box.appendChild(raw);
   }
   box.appendChild(mk('p', 'tts-cloud-note tts-cloud-honesty',
-    'With a cloud voice, the text of the cards you play is sent to Google to be spoken. Your key stays on this device and is never saved into your cards, patches or exports. Standard voices: the first 4 million characters a month are free, then about $4 per million (Google’s pricing, checked Sep 2026). Set a budget alert in your Google Cloud account. Restrict the key to the Text-to-Speech API — a website restriction would block Cairn, which runs from a file.'));
+    'Cairn\'s cloud voice uses Google Cloud Text-to-Speech only; keys from other services will not work here. With a cloud voice, the text of each card you play is sent to Google to be spoken. Your key stays on this device — it is never written into your cards, patches or exports. Standard voices: the first 4 million characters a month are free, then about $4 per million (Google\'s pricing, checked Sep 2026); other voice families — WaveNet, Neural2, Studio — cost more. Set a budget alert in your Google Cloud account, and restrict the key to the Text-to-Speech API only. Do not add a website restriction: it would block Cairn when it runs from a file.'));
   box.appendChild(meter);
   const cacheRow = mk('div', 'tts-cloud-row');
   const cacheLine = mk('span', 'tts-cloud-note tts-cloud-cache', 'Saved speech: …');
@@ -7580,14 +7647,29 @@ function deriveCourseStructure(cards) {
   out.push(deriveFurtherReadingSubtree(cards));
   return out;
 }
+function sectionGuideCount(root) {
+  return guideForSection(root) ? 1 : 0;
+}
+function unitHeadCard(unit) {
+  return unit && unit.id !== BEYOND_COURSE_ID
+    ? state.cards.find(c => c.type === 'courseUnit' && c.unitKey === unit.id) || null
+    : null;
+}
+function frSectionHeadCard(subUnitId) {
+  return state.cards.find(c => c.type === 'sectionMember' && c.id !== FR_OTHER_ID
+    && String(c.id).replace(/^fr-member-/, 'beyond-course-') === subUnitId) || null;
+}
+function researchTopicCard(track) {
+  return state.cards.find(c => c.type === 'frontier' && c.sectionRoot === 'research' && c.title === track) || null;
+}
 function guideForSection(root) {
   return state.cards.find(c => c.type === 'guide' && c.sectionRoot === root) || null;
 }
 const SECTION_DEFAULTS = {
-  course:         '#6b21a8',
-  fieldMap:       '#0e7490',
-  research:       'var(--c-frontier)',
-  furtherReading: '#b45309',
+  course:         '#0550ff',
+  fieldMap:       '#0d910f',
+  research:       '#6e7c04',
+  furtherReading: '#0685bc',
   cairns:         '#5e9432',
   app:            'var(--c-guide)',
 };
@@ -7989,7 +8071,9 @@ function cardsForSubUnit(unit, subUnit) {
   const otherCluster = sortByType(candidates.filter(c =>
     !claimedIds.has(c.id) && !claimedBySibling(c)
   ));
+  const frHead = (unit && unit.id === BEYOND_COURSE_ID && subUnit) ? frSectionHeadCard(subUnit.id) : null;
   return [
+    ...(frHead ? [frHead] : []),
     ...syllabusCards, ...exerciseCards, ...actorCards,
     ...clusters.flat(),
     ...principalCast,
@@ -8001,6 +8085,8 @@ function cardsForSubUnit(unit, subUnit) {
 function cardsForUnit(unit) {
   const seen = new Set();
   const out = [];
+  const head = unitHeadCard(unit);
+  if (head) { seen.add(head.id); out.push(head); }
   for (const su of unit.subUnits) {
     for (const c of cardsForSubUnit(unit, su)) {
       if (!seen.has(c.id)) { seen.add(c.id); out.push(c); }
@@ -8359,10 +8445,14 @@ function researchTracks() {
 function cardsForResearchNode(course) {
   const all = researchCards();
   if (course && course.track !== RESEARCH_ALL && course.track !== RESEARCH_UNTRACKED) {
-    return all
-      .filter(c => cardTracks(c).includes(course.track))
-      .slice()
-      .sort((a, b) => cardTypeOrderResearch(a.type) - cardTypeOrderResearch(b.type));
+    const topic = researchTopicCard(course.track);
+    return [
+      ...(topic ? [topic] : []),
+      ...all
+        .filter(c => cardTracks(c).includes(course.track))
+        .slice()
+        .sort((a, b) => cardTypeOrderResearch(a.type) - cardTypeOrderResearch(b.type)),
+    ];
   }
   if (course && course.track === RESEARCH_UNTRACKED) {
     return all
@@ -8372,19 +8462,22 @@ function cardsForResearchNode(course) {
   }
   const { tracks, hasUntracked } = researchTracks();
   const out = [];
+  const seen = new Set();
+  const emitOnce = cards => { for (const c of cards) { if (seen.has(c.id)) continue; seen.add(c.id); out.push(c); } };
   for (const trackName of tracks) {
+    const topic = researchTopicCard(trackName);
     const trackCards = all
       .filter(c => cardTracks(c).includes(trackName))
       .slice()
       .sort((a, b) => cardTypeOrderResearch(a.type) - cardTypeOrderResearch(b.type));
-    out.push(...trackCards);
+    emitOnce(topic ? [topic, ...trackCards] : trackCards);
   }
   if (hasUntracked) {
     const untracked = all
       .filter(c => cardTracks(c).length === 0)
       .slice()
       .sort((a, b) => cardTypeOrderResearch(a.type) - cardTypeOrderResearch(b.type));
-    out.push(...untracked);
+    emitOnce(untracked);
   }
   return out;
 }
@@ -8495,7 +8588,7 @@ function fieldMapFieldValues(key, opts) {
   );
 }
 function renderCourseUnit(root, unit) {
-    const unitCount = cardsForUnit(unit).length;
+    const unitCount = cardsForUnit(unit).length + (unit.id === BEYOND_COURSE_ID ? sectionGuideCount('furtherReading') : 0);
     const unitEmpty = unitCount === 0;
     const unitOpen = state.panel.expanded.has(unit.id);
     const unitActive = state.filters.course
@@ -8671,7 +8764,7 @@ function allExpandableNodeIds() {
 function buildCoursePanel() {
   const root = document.createElement('div');
   root.className = 'course-tree';
-  const cairnsCount = cardsForCourseNode({ kind: 'cairns' }).length;
+  const cairnsCount = cardsForCourseNode({ kind: 'cairns' }).length + sectionGuideCount('cairns');
   const cairnsActive = state.filters.course && state.filters.course.kind === 'cairns';
   const cairnsOpen = state.panel.expanded.has('cairns-section');
   const cairnsUnitRow = document.createElement('div');
@@ -8726,7 +8819,7 @@ function buildCoursePanel() {
   }
   const fmInstCount = fieldMapCards(FIELD_MAP_INSTITUTIONS).length;
   const fmPlatCount = fieldMapCards(FIELD_MAP_PLATFORMS).length;
-  const fmTotal = fmInstCount + fmPlatCount;
+  const fmTotal = fmInstCount + fmPlatCount + sectionGuideCount('fieldMap');
   const fmOpen = state.panel.expanded.has('field-map-section');
   const fmActive = state.filters.course && state.filters.course.kind === 'fieldMap';
   const fmUnitRow = document.createElement('div');
@@ -8825,13 +8918,14 @@ function buildCoursePanel() {
     root.appendChild(fmSubList);
   }
   const rCards = researchCards();
+  const rTotal = cardsForResearchNode({ kind: 'research', track: RESEARCH_ALL }).length + sectionGuideCount('research');
   {
     const { tracks, hasUntracked } = researchTracks();
     const rOpen = state.panel.expanded.has('research-section');
     const rActive = state.filters.course && state.filters.course.kind === 'research';
     const rUnitRow = document.createElement('div');
     rUnitRow.className = 'tree-row tree-unit is-section-head'
-      + (rCards.length === 0 ? ' empty' : '')
+      + (rTotal === 0 ? ' empty' : '')
       + (rActive && state.filters.course.track === RESEARCH_ALL ? ' active' : '');
     rUnitRow.style.setProperty('--section-color', effectiveSectionColour('research'));
     const rCaret = document.createElement('button');
@@ -8848,7 +8942,7 @@ function buildCoursePanel() {
     });
     const rMain = document.createElement('button');
     rMain.className = 'tree-main';
-    rMain.innerHTML = `<span class="tree-label">${escapeHtml(rLabel)}</span><span class="tree-count">${rCards.length}</span>`;
+    rMain.innerHTML = `<span class="tree-label">${escapeHtml(rLabel)}</span><span class="tree-count">${rTotal}</span>`;
     rUnitRow.title = String(rLabel || '');
     rMain.addEventListener('click', () => {
       setCourseFilter({ kind: 'research', track: RESEARCH_ALL });
@@ -8919,7 +9013,7 @@ function buildCoursePanel() {
       });
       const headerMain = document.createElement('button');
       headerMain.className = 'tree-main';
-      headerMain.innerHTML = `<span class="tree-label">${escapeHtml(courseGuide.title)}</span><span class="tree-count">${cardsForCourseNode({ kind: 'course', courseId: env.courseId }).length}</span>`;
+      headerMain.innerHTML = `<span class="tree-label">${escapeHtml(courseGuide.title)}</span><span class="tree-count">${cardsForCourseNode({ kind: 'course', courseId: env.courseId }).length + 1}</span>`;
       headerMain.setAttribute('aria-label', 'Open ' + courseGuide.title + ' (course root)');
       headerMain.title = 'Open the whole course — the guide and every unit\'s cards';
       headerRow.title = String(courseGuide.title || '');
@@ -9095,14 +9189,18 @@ function togglePanelPinned() {
   applyPanelPinVisual();
   saveEphemeralState();
 }
+function restorePinnedPanel() {
+  if (state.panel.pinned && panelIsWide() && !state.panel.open && state.cards.length) openPanel();
+  applyPanelPinVisual();
+}
 function setupPanelPinResponsive() {
-  if (state.panel.pinned && panelIsWide() && !state.panel.open) openPanel();
+  if (state.panel.pinned && panelIsWide() && !state.panel.open && state.cards.length) openPanel();
   applyPanelPinVisual();
   if (window.matchMedia) {
     const mq = window.matchMedia('(min-width: 1024px)');
     const onChange = (e) => {
       if (e.matches) {
-        if (state.panel.pinned && !state.panel.open) openPanel();
+        if (state.panel.pinned && !state.panel.open && state.cards.length) openPanel();
       } else if (state.panel.pinned && state.panel.open) {
         closePanelForce();
       }
@@ -9491,12 +9589,14 @@ function renderFilterBar() {
     bar.appendChild(clr);
   }
 }
-function spineOrderedCards() {
+function spineOrderedCards(opts) {
+  const structural = !!(opts && opts.structural);
   const out = [];
   const seen = new Set();
   const emit = cards => {
     for (const c of cards) {
-      if (c.type === 'sectionMember' || c.type === 'frontier' || c.type === 'courseUnit') continue;
+      if (c.type === 'sectionMember' && c.id === FR_OTHER_ID) continue;
+      if (!structural && (c.type === 'frontier' || c.type === 'courseUnit' || c.type === 'sectionMember')) continue;
       if (seen.has(c.id)) continue;
       seen.add(c.id);
       out.push(c);
@@ -9506,6 +9606,7 @@ function spineOrderedCards() {
     const g = state.cards.find(c => c.type === 'guide' && c.sectionRoot === sectionRoot);
     if (g && !seen.has(g.id)) { seen.add(g.id); out.push(g); }
   };
+  emitGuide('app');
   emitGuide('cairns');
   emit(cardsForCourseNode({ kind: 'cairns' }));
   emitGuide('fieldMap');
@@ -9533,6 +9634,8 @@ function spineOrderedCards() {
   const courseEnv = COURSE_STRUCTURE.find(x => x && Array.isArray(x.tops));
   if (courseEnv) {
     for (const unit of courseEnv.tops) {
+      const unitHead = structural ? unitHeadCard(unit) : null;
+      if (unitHead && !seen.has(unitHead.id)) { seen.add(unitHead.id); out.push(unitHead); }
       for (const subUnit of unit.subUnits) {
         emit(cardsForCourseNode({ kind: 'subUnit', unitId: unit.id, subUnitId: subUnit.id }));
       }
@@ -9551,9 +9654,17 @@ function sectionRootKey(course) {
   return null;
 }
 function isSectionRoot(course) { return sectionRootKey(course) !== null; }
+function showsBucketHeads(filters) {
+  const fc = filters && filters.course;
+  if (!fc) return false;
+  if (fc.kind === 'course') return true;
+  if (fc.kind === 'research') return fc.track === RESEARCH_ALL || fc.track == null;
+  if (fc.kind === 'unit') return fc.unitId === BEYOND_COURSE_ID;
+  return false;
+}
 function filterCards(filters, searchQuery) {
-  let pool = filters.course ? state.cards.slice() : spineOrderedCards();
-  pool = pool.filter(c => (c.type !== 'sectionMember' || c.id !== FR_OTHER_ID) && (c.type !== 'courseUnit' || filters.type === 'courseUnit') && (c.type !== 'frontier' || filters.type === 'frontier') && (c.type !== 'guide' || filters.type === 'guide'));
+  let pool = filters.course ? state.cards.slice() : spineOrderedCards({ structural: true });
+  pool = pool.filter(c => (c.type !== 'sectionMember' || c.id !== FR_OTHER_ID) && (c.type !== 'courseUnit' || filters.type === 'courseUnit' || showsBucketHeads(filters) || !filters.course) && (c.type !== 'frontier' || filters.type === 'frontier' || showsBucketHeads(filters) || !filters.course)     && (c.type !== 'guide' || filters.type === 'guide' || !filters.course));
   if (filters.type)    pool = pool.filter(c => c.type === filters.type);
   if (filters.types && filters.types.length)
     pool = pool.filter(c => filters.types.includes(c.type));
@@ -9632,6 +9743,10 @@ function filterCards(filters, searchQuery) {
     const cu = state.cards.find(c => c.type === 'courseUnit' && c.unitKey === fc.unitId);
     if (cu) pool = [cu, ...pool.filter(c => c.id !== cu.id)];
   }
+  if (narrowing) {
+    const onlyOnce = new Set();
+    pool = pool.filter(c => (onlyOnce.has(c.id) ? false : (onlyOnce.add(c.id), true)));
+  }
   const suFc = filters.course;
   if (suFc && suFc.kind === 'subUnit' && suFc.unitId === BEYOND_COURSE_ID
       && (filters.type === 'sectionMember' || !narrowing)) {
@@ -9704,6 +9819,7 @@ function refreshNavHowtoState() {
   else navHowto.setAttribute('disabled', '');
 }
 function renderView() {
+  document.body.classList.toggle('no-deck', !state.cards.length);
   refreshNavHowtoState();
   renderTabs();
   renderFilterRow();
@@ -9809,17 +9925,26 @@ function renderView() {
 }
 function renderEmptyState(view) {
   const e = document.createElement('div');
-  e.className = 'empty-state';
+  e.className = 'empty-state welcome';
   e.innerHTML = `
-    <h1>Welcome to Cairn</h1>
-    <p>A workspace for moving into a new field. Study it, map its landscape, and develop your own research.</p>
-    <div class="actions">
-      <button class="btn primary" id="empty-add">Add your first card</button>
-      <button class="btn" id="empty-import">Import from JSON</button>
-      <button class="btn" id="empty-load">Load atlas-data.json</button>
+    <div class="empty-main">
+      <h1>Welcome to Cairn<span class="cairn-mark hero-mark" aria-hidden="true"></span></h1>
+      <p>A companion for a crossing into a new field. Study the courses, map the field, develop your own research, plan the move.</p>
+      <div class="actions">
+        <button class="btn primary" id="empty-load">Open your deck</button>
+        <button class="btn" id="empty-import">Open a cards pack</button>
+        <button class="btn" id="empty-add">Start a new deck</button>
+      </div>
     </div>
-    <small class="empty-hint">New here? Load atlas-data.json — the guides inside walk you through how everything works.</small>
-    <small>Cairn works offline. Your cards are saved to atlas-data.json in this folder.</small>
+    <div class="empty-notes">
+      <ul class="empty-hints">
+        <li class="empty-hint">New here? Open a deck file (cairn-deck.json), the guides inside it walk you through how everything works.</li>
+        <li class="empty-hint">No deck yet? Open the sample pack from Cairn’s GitHub page (the link in the menu), a field map, course or colleague’s pack or simply start a new deck.</li>
+        <li class="empty-hint">Your first card is a guide: it opens the section that holds the rest.</li>
+      </ul>
+      <div class="empty-rule" aria-hidden="true"></div>
+      <small class="empty-offline">Cairn works offline once it is open. Your cards live in your deck file, on your own device, nothing you write leaves it.</small>
+    </div>
   `;
   view.appendChild(e);
   document.getElementById('empty-add').addEventListener('click', () => openTypeChooser());
@@ -10342,6 +10467,14 @@ function buildFieldMapCellStar(card) {
   });
   return star;
 }
+const FIELD_MAP_OPEN_OPP_STATUSES = new Set(['open', 'rolling', 'upcoming']);
+function fieldMapOpenOppCount(card) {
+  const o = card && card.opportunities;
+  if (!Array.isArray(o)) return 0;
+  let n = 0;
+  for (const e of o) if (e && typeof e === 'object' && FIELD_MAP_OPEN_OPP_STATUSES.has(String(e.status || '').trim().toLowerCase())) n++;
+  return n;
+}
 const FIELD_MAP_TABLE_COLUMNS = [
   {
     key: 'starred', label: '★', sortable: true, headerTitle: 'Sort starred first',
@@ -10350,21 +10483,16 @@ const FIELD_MAP_TABLE_COLUMNS = [
   },
   {
     key: 'title', label: 'Title', sortable: true, cls: 'fm-cell-title',
-    cell: card => card.title || '(untitled)',
-    sort: card => String(card.title || ''),
-  },
-  {
-    key: 'type', label: 'Type', sortable: true,
     cell: card => {
       const wrap = document.createElement('span');
       const dot = document.createElement('span');
       dot.className = 'fm-type-dot';
       dot.style.background = getTypeColorVar(card.type);
       wrap.appendChild(dot);
-      wrap.appendChild(document.createTextNode(typeCfg(card.type).singular));
+      wrap.appendChild(document.createTextNode(card.title || '(untitled)'));
       return wrap;
     },
-    sort: card => String(typeCfg(card.type).singular || ''),
+    sort: card => String(card.title || ''),
   },
   {
     key: 'orgType', label: 'Org type', sortable: true, cls: 'fm-muted',
@@ -10395,6 +10523,11 @@ const FIELD_MAP_TABLE_COLUMNS = [
     key: 'activityBucket', label: 'Activity', sortable: true, cls: 'fm-muted',
     cell: card => String(card.activityBucket || '').trim(),
     sort: card => String(card.activityBucket || '').trim(),
+  },
+  {
+    key: 'openOpps', label: 'Open opps', sortable: true, cls: 'fm-num', headerTitle: 'Sort most open opportunities first',
+    cell: card => String(fieldMapOpenOppCount(card)),
+    sort: card => -fieldMapOpenOppCount(card),
   },
   {
     key: 'safety', label: 'Safety', sortable: true, cls: 'fm-muted',
@@ -11974,6 +12107,7 @@ function navigateToCard(cardId, pushHistory) {
         filters: JSON.parse(JSON.stringify(state.filters)),
         searchQuery: state.searchQuery,
         cardId: cur.id,
+        fieldMapOpenCardId: state.fieldMapOpenCardId || null,
         ts: Date.now(),
       });
       if (state.history.length > 50) state.history.shift();
@@ -12122,6 +12256,8 @@ function goBack() {
     const s = document.getElementById('search');
     if (s) s.value = prev.searchQuery;
   }
+  state.fieldMapOpenCardId = (prev.fieldMapOpenCardId && currentSection() === 'fieldMap' && fieldMapViewIsGrid(state.fieldMapView))
+    ? prev.fieldMapOpenCardId : null;
   const visible = getVisibleCards();
   const idx = visible.findIndex(c => c.id === prev.cardId);
   state.currentIndex = Math.max(0, idx);
@@ -14403,6 +14539,7 @@ function confirmDelete(card) {
         { text: 'Cancel', onClick: closeModal },
         { text: 'Delete', danger: true, onClick: () => {
           state.cards = state.cards.filter(c => c.id !== card.id);
+          pruneHistoryToDeck();
           for (const c of state.cards) {
             if (c.relatedIds) c.relatedIds = c.relatedIds.filter(id => id !== card.id);
           }
@@ -14521,6 +14658,7 @@ function validateCardDeclaratively(card, label) {
 function openImportModal() {
   const body = document.createElement('div');
   body.innerHTML = `
+    <p style="margin: 0 0 8px; color: var(--text-muted);">ⓘ Import — add cards to your deck from a JSON file: a patch saved on your phone, a card pack, or cards a colleague sent you. Your deck stays; the cards are added.</p>
     <p style="margin: 0 0 8px; color: var(--text-muted);">Paste a JSON array of card objects (or an object with a <code>cards</code> array).</p>
     <p style="margin: 0 0 12px; font-size: 13px; color: var(--text-subtle);">Existing cards with matching <code>id</code> will be overwritten. Cards without an <code>id</code> get a new one.</p>
   `;
@@ -14625,11 +14763,14 @@ function normaliseCard(raw) {
   c.source = c.source || '';
   return c;
 }
+function deckFileStem() {
+  return String(state.currentFilename || 'atlas-data.json').replace(/\.json$/i, '');
+}
 function exportFullDeck() {
   const data = serialiseData();
   const d = new Date();
   const stamp = d.getFullYear().toString() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0');
-  download(`atlas-data-backup-${stamp}.json`, data, 'application/json');
+  download(deckFileStem() + '-backup-' + stamp + '.json', data, 'application/json');
 }
 const WRITTEN_WORK_FIELDS = [['userResponse', 'Your response'], ['myNotes', 'My notes']];
 function writtenWorkHasText(displayHtml) {
@@ -15343,9 +15484,9 @@ function openSettings() {
     <div class="field">
       <label>Data file</label>
       <p style="font-size: 13px; color: var(--text-muted); margin: 0 0 8px;">Where Cairn reads & writes your cards.</p>
-      <button class="btn" id="set-open" style="margin-bottom: 6px; width: 100%; justify-content: flex-start;">Open / replace atlas-data.json…</button>
+      <button class="btn" id="set-open" style="margin-bottom: 6px; width: 100%; justify-content: flex-start;">Open or replace your deck (cairn-deck.json)…</button>
       <button class="btn" id="set-saveas" style="width: 100%; justify-content: flex-start;">Save As… (pick a destination file)</button>
-      <p style="font-size: 12px; color: var(--text-subtle); margin: 8px 0 0;">Direct file save needs the File System Access API (desktop Chrome / Edge). Safari falls back to downloading a fresh atlas-data.json on each Save.</p>
+      <p style="font-size: 12px; color: var(--text-subtle); margin: 8px 0 0;">On desktop Chrome and Edge, Save writes straight back to your deck file (the browser asks once for permission). On desktop Safari and Firefox, Save downloads a fresh copy of the whole deck — replace the file on your device with it. On phones and tablets, Save downloads a small patch file (cairn-patch_&lt;date&gt;.json) holding only what changed — import it into your deck on your computer with the Import button at the top.</p>
       <p style="font-size: 12px; color: var(--text-subtle); margin: 8px 0 0;">On a phone, edits live in the patch — press Save changes before you close; import the patch on the desktop.</p>
       <p style="font-size: 12px; color: var(--text-subtle); margin: 4px 0 0;">Deleting a card also updates every card that linked to it; those ride along automatically.</p>
       <div id="set-patch-orphans"></div>
@@ -15592,8 +15733,7 @@ function wireGlobalEvents() {
     content.className = 'about-popover';
     content.innerHTML = `
       <div class="about-row"><span class="about-label">Author</span><span class="about-value" style="font-size: 13px;">Rosário Ponce de Leão</span></div>
-      <div class="about-row"><span class="about-label">Version</span><span class="about-value">Cairn v1.11.88</span></div>
-      <div class="about-disclaimer">Courses shown are loaded as approved by their providers.</div>`;
+      <div class="about-row"><span class="about-label">Version</span><span class="about-value">Cairn v1.11.91</span></div>`;
     popover.open(document.getElementById('panel-about'), content);
   });
   document.getElementById('modal-close').addEventListener('click', () => { if (!showModal._locked) closeModal(); });
@@ -15664,12 +15804,27 @@ function toast(msg, kind, ms) {
   clearTimeout(toast._t);
   toast._t = setTimeout(() => el.classList.remove('visible'), ms || 2500);
 }
+function relaxFiltersIfDeckShowsNothing() {
+  if (!state.cards.length || getVisibleCards().length) return;
+  state.filters = defaultFilters();
+  state.searchQuery = '';
+  const s = document.getElementById('search');
+  if (s) s.value = '';
+  state.fieldMapOpenCardId = null;
+}
+function pruneHistoryToDeck() {
+  const ids = new Set(state.cards.map(c => c.id));
+  state.history = state.history.filter(e => e && ids.has(e.cardId));
+}
 function afterDataLoaded() {
   state.cards = state.cards.map(normaliseCard);
+  pruneHistoryToDeck();
   rebuildCourseStructure();
+  relaxFiltersIfDeckShowsNothing();
   saveEphemeralState();
   markClean();
   renderView();
+  restorePinnedPanel();
   patchRebase();
   patchCheckRecovery();
 }
@@ -15684,7 +15839,7 @@ async function init() {
     if (loaded) {
       state.cards = loaded.cards.map(normaliseCard);
       state.deckEnvelope = loaded.envelope;
-      setDeckFilename('atlas-data.json');
+      setDeckFilename(loaded.filename);
     } else {
       state.cards = [];
       state.deckEnvelope = { version: 1 };
@@ -15694,16 +15849,20 @@ async function init() {
     return;
   }
   rebuildCourseStructure();
+  pruneHistoryToDeck();
+  relaxFiltersIfDeckShowsNothing();
   renderView();
   patchRebase();
   patchCheckRecovery();
+  restorePinnedPanel();
 }
-function showMalformedDataDialog(msg) {
+function showMalformedDataDialog(msg, filename) {
+  const name = filename || state.currentFilename || 'atlas-data.json';
   const view = document.getElementById('view');
   view.innerHTML = `
     <div class="empty-state">
-      <h1>atlas-data.json couldn’t be read</h1>
-      <p>The file was found but failed to parse:<br><code style="display: inline-block; margin-top: 6px; color: #b91c1c;">${escapeHtml(msg)}</code></p>
+      <h1>Your deck file couldn't be read</h1>
+      <p>${escapeHtml(name)} was found but failed to parse:<br><code style="display: inline-block; margin-top: 6px; color: #b91c1c;">${escapeHtml(msg)}</code></p>
       <div class="actions">
         <button class="btn primary" id="bd-fresh">Start fresh (after backup)</button>
         <button class="btn" id="bd-open">Pick a different file</button>
@@ -15712,10 +15871,10 @@ function showMalformedDataDialog(msg) {
     </div>`;
   document.getElementById('bd-fresh').addEventListener('click', async () => {
     try {
-      const url = new URL('./atlas-data.json', location.href).toString();
+      const url = new URL('./' + name, location.href).toString();
       const res = await fetch(url, { cache: 'no-store' });
       const text = await res.text();
-      download('atlas-data-broken-backup.json', text, 'application/json');
+      download(name.replace(/\.json$/i, '') + '-broken-backup.json', text, 'application/json');
     } catch (e) {   }
     state.cards = [];
     state.deckEnvelope = { version: 1 };
