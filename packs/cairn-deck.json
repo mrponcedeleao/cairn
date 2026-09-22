@@ -1,0 +1,259 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "guide-app-how-to-use",
+   "type": "guide",
+   "title": "How to use Cairn",
+   "sectionRoot": "app",
+   "blurb": "One file, no account, everything you are learning in one place. Read it, hear it, mark it, write on it, export it, and keep the plan that got you here alive.",
+   "description": "Cairn is a study companion for anyone crossing into a new field. It holds five kinds of thing that usually live in five places: a course, carded reading by reading; a map of the organisations and platforms in the field; your own research, structured with its honesty built in; a shelf of reading beyond any course; and the career plan that keeps the crossing on track. It is a single web page that reads a single deck file, cairn-deck.json. Open the page from your own computer or from its web address. Either way your cards stay in your file, on your device, and nothing you write leaves it. Cairn works offline once it is open. This deck holds six guides, one for the app and one for each of the five sections. On Cairn's GitHub page the starter deck is these guides and nothing else, and the sample pack fills every kind of card for a made-up field, so you can see the shapes before you make your own. Open either one from the welcome screen: Open your deck for a deck you mean to keep, Open a cards pack to look at one without adopting it.",
+   "howToUse": "Start. With no deck open, the welcome offers three doors: Open your deck (your cairn-deck.json), Open a cards pack (read a pack a colleague or a course sent you, without adding it to your deck), and Start a new deck. Your first card is a guide: it opens the section that holds the rest.\n\nFind your way. When a deck opens, All / Search lists its guides first, this one at the top, then the cards that give the deck its shape, in the order of the spine. The spine on the left is the whole deck as a tree: Cairns, Field Map, Research, Further Reading, then each course by unit. Every row shows a count; the little arrows open and close and remember how you left them. Click a section's name and you land on its guide, this card's cousins. The tree icon in the spine's toolbar opens the structure cards: the guides, the course units, the research topics, the reading shelves. That is the skeleton the content hangs on, so you can add a unit or a topic without touching a single content card.\n\nRead it, then hear it. Every card has a front (the one thing to remember) and a back (everything else; flip with Space or a tap). Press the speaker on any card and it reads aloud in a sensible order, field by field, with the field names spoken as cues. Press Play All above any list and it reads the whole list in the order you see it, with a mini-player and lock-screen controls on a phone, so a unit or a research topic becomes a walk. On a laptop, the left and right arrow keys step through cards and Space flips.\n\nChoose the voice. Settings offers your device's own voices, and a cloud voice if you want a better one: paste your own Google Text-to-Speech key, press Test, and it tells you plainly if something is wrong. The key stays on your device. A counter shows the characters sent this month, and a card read twice is not paid for twice, because the clips are kept. If the cloud voice fails, reading falls back to the device voice with a short notice, so it never goes silent.\n\nSearch everything, filter anything. The search box reads every text field on every card: definitions, your notes, the crux of a tension, an institution's details, a check-in. Results appear as you type. Then narrow: by type, by star, by hiding what you have marked done, and in the Field Map and Cairns by their own axes. Every filter is a chip you can remove. Back takes you the way you came, from a linked card to the card that linked it and from a card to its list, and only ever offers places that still exist.\n\nEverything links. Any concept, glossary term, person or framework named inside any card becomes a link where it appears: hover for the definition, click to go. Related cards sit at the foot of every card. Acronyms expand themselves the first time they appear. A card can appear in more than one place, a reading in a course and on an author's shelf at once, and says so on its back.\n\nMake it yours. Star what matters. Mark cards done and hide them. Write notes on every card with a small formatting toolbar; they are searchable and read aloud with the card. Answer exercises in the card itself, with a template if the author left one. Add your own cards with the green + button in the tab row. The form shows only the fields that type has, each with an ⓘ that explains it, and you place the card where it belongs with \"Appears in\".\n\nPut a card where it belongs. A card is in the wrong place when you find it under a section or unit it does not belong to, or cannot find it where you expected. Search finds it by any word in it, wherever it landed, and the card's back says where it appears. To move it, open the card, press Edit, and set Appears in: a course unit, a Further Reading shelf, or a research topic. Institutions and platforms file themselves in the Field Map and need nothing. Save, and the spine counts update.\n\nTake it with you. Any branch of the tree can be exported as a Word file or Markdown: a whole course, one unit, one research topic, one shelf, one card. Two ticks decide whether your notes and your exercise answers go with it, and each is counted before you press the button. Goals and opportunities export to your calendar. The whole deck exports as a JSON backup (JSON is the plain text format the deck file is written in) in one click.\n\nSave, at your desk and on the go. On a desktop, Save writes straight back to your file in Chrome and Edge, or downloads a copy under the same name your deck was opened with. On a phone, Save writes a small patch of just what changed, cairn-patch_<date>.json, and importing that patch into the full deck on your computer merges it. If the same card changed on both sides, the import names it by title and lets you choose. A chip on touch screens, or a pill on desktops, shows when there is unsaved work. If the browser is closed or crashes first, Cairn keeps what you had and offers Recover at the next open, and under Settings, Data file.\n\nGrow it. Import a pack, a JSON file of cards someone made: a course, a field map, a shelf. It merges by id and never duplicates, and the import summary says what was added and what was re-linked. Build your own cards with an AI assistant, by hand or with a skill (a recipe file the assistant reads first, so the cards it drafts follow the same conventions as these). Packs are content and skills are method, and both are how people share work. The GitHub link in the Menu is where the ones that exist are kept. The Contact button in the same menu reaches the author.",
+   "aiWorkflow": "Open the section's guide and a blank card of the type you want, and give your assistant three things: the guide (so it knows what the section is for), the card form's field names with their ⓘ text (so it knows what each field holds), and the source you want carded: a syllabus page, a folder of notes, an organisation's About page, your own documents. Ask for cards in the deck's JSON shape, honest about what it drafted and what it could not verify, and read every one before you import. The skills on Cairn's GitHub page do the same with less setting up; use whichever is there for the section you are building. The example cards in the example pack were drafted with Claude by the author, from full reads of their sources, and are labelled as examples on their face.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-course",
+   "type": "guide",
+   "title": "Course",
+   "sectionRoot": "course",
+   "blurb": "A whole course, carded reading by reading: every resource with its link, every exercise with your answer in it, and every idea it teaches turned into a card you can search, hear and link.",
+   "description": "A course as a study companion: units and sub-units as the syllabus lays them out, each reading with what it is and how long it takes, and the concepts, tensions, frameworks, people and stories each reading contains as cards of their own. It is the shape for any course you are taking: a university module, a professional certificate, a reading group. Courses shown are loaded as approved by their providers.",
+   "howToUse": "Walk the syllabus. Each unit is a row in the spine. Open a sub-unit and its syllabus card lists the readings, Required, Optional, or Added by author when the deck's owner brought something in, with the link, the author, the time it takes, and a Listen to article link where an audio version exists. Two small ticks per reading, reviewed and flashcards done, keep your place.\n\nLearn the reading, not only the summary. Under each reading sit its cards: a concept with its definition, an anchor (the memorable hook), a metaphor and why it matters; a tension with both parties, their claims and the crux; a framework with when to use it; the people, called cast, with their stance and key works; a story told as a metaphor; the glossary, whose terms light up wherever they appear in the deck. The cards cluster under the reading they came from, automatically, by source.\n\nDo the exercises in the card. Each exercise carries its prompt and a space for your answer, with formatting. Use template fills a structure the author left; the status chip goes Not started, Ongoing, Done as you work. Your answers are yours: they are not searchable by default and they export only when you tick the box.\n\nHear a unit on a walk. Play All on a sub-unit reads the syllabus, then each card, in order, with the field names spoken so you know where you are. The read-along toggle expands the list on screen in the same order.\n\nHand your work to a reviewer. Export this course's exercises, every prompt with your answer under it, headed by unit, as a Word file. Or export everything you have written across the deck, or one unit, or one card. This is how a peer, a tutor or an AI reviewer sees exactly what you did.\n\nBridge to your own work. Cards that bear on your research carry a Research relevance line, the author's note on what this reading contributes to which thesis, and the related-cards list takes you there. The course is not sealed off from what you are building.\n\nMark and hide. Star, done, hide done. Your progress is a filter, not a spreadsheet.",
+   "aiWorkflow": "Give your assistant this guide, the card forms for syllabus, concept, tension, framework, cast, story and glossary, and the syllabus page. Ask for the structure first (units, sub-units, readings with links and times) and then, reading by reading, the content cards, each with an anchor written to be remembered, its source named, and nothing invented. Import the structure first and the cards after, and read every card before you trust it. If Cairn's GitHub page has a skill for courses, it does this with less setting up. A course's owner may need to grant permission before a carded course is shared onward.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [],
+   "curriculum": ""
+  },
+  {
+   "id": "guide-field-map",
+   "type": "guide",
+   "title": "Field Map",
+   "sectionRoot": "fieldMap",
+   "blurb": "The organisations and the platforms of a whole field: where they are, what they do, how open they are, who to write to, and how many doors each has open right now, with the hours of research already done and dated.",
+   "description": "A map of a field you are entering. Institutions (labs, institutes, funders, think tanks, companies) and platforms (courses, communities, job boards, tools), each as a card with the facts a newcomer needs and the judgement calls a newcomer cannot make: a safety stance, an openness rating, a work-mode note, a checked-on date, and a provenance line saying which of the organisation's own pages were read, and when.",
+   "howToUse": "Find the door, and count them. Each card carries links (site, careers, papers), contacts (public addresses, as mailto), and opportunities as structured rows: kind, label, status, deadline, stipend, eligibility, work mode, and the date the author saw it. In the Table, the Open opps column shows, for every organisation, how many of its opportunities are still actionable, meaning open, rolling or upcoming. Closed, by invitation and not stated never count, because a door nobody has described is not an open door. Tap the header once and the organisations with the most openings come first; tap again for the fewest. Filter first to the slice you care about, a topic, a region, a research frontier, and the column does the arithmetic: twenty openings in the field you are entering, and which cards hold them. Track your own engagement (targeting, applied, in conversation) in the same row and star what you are working towards.\n\nFour views of the same cards. Cards, to read one organisation at a time. Map, a world map with a pin per site, clustered when they overlap, coloured by the organisation's safety stance, dashed when the location is approximate; zoom with the wheel, a pinch or the buttons, and country and city names appear as you go in; click a pin or a cluster to open the card. Table, every organisation as a row, an institution or a platform told apart by the dot before its title, sortable by location, activity, safety and open opportunities, with your reading status, engagement and star editable in the row. Locations, the sites themselves, region and country, editable in place.\n\nFilter to the slice you need. By type (institutions or platforms), by topic, organisation type, geography and relevance to a research frontier, each dropdown counting what is in view, plus starred and search. Filters apply to the map as much as to the list, so \"remote-friendly funders in Europe interested in welfare\" is three clicks and a look.\n\nRead the badges before the prose. Safety stance (mission, programme, partial, none found, not assessed) with a note; openness (open, partial, closed); work mode (on-site to fully remote); eligibility; the date it was checked; and provenance, how the card was made: which pages were read, when, in which language. The badges are the difference between a directory and a map.\n\nGo in and come back. Open an organisation, follow a link on its card, press Back and you are on the organisation again. Press it again and you are back on the table or the map, filters intact.\n\nTake a briefing with you. Export Institutions, or one activity bucket, or the platforms, as a Word file: a dated field briefing with links and badges, for a mentor, a funder conversation, or your own printout.",
+   "aiWorkflow": "Give your assistant this guide, the institution or platform card form, and an organisation's About page or careers page. Ask for the card in your words after a full read: blurb, details, badges left as not assessed until you judge them, links, a provenance line naming the pages it read, an opportunities row per live posting with its status and the date, and a location with city and country. You add the coordinates or mark the location approximate. Import in batches; the map draws itself and the Open opps column counts. If Cairn's GitHub page has a skill for field maps, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-research",
+   "type": "guide",
+   "title": "Research",
+   "sectionRoot": "research",
+   "blurb": "Your own research, structured so it cannot fool you: theses, metrics, evidence and open questions, each carrying how mature it is, whether you have read the source, and who wrote it.",
+   "description": "A scaffold for thinking in public before you publish. Research topics (frontiers) are the structure, and under each sits a working set: a thesis stated and defined, the metrics that would test it, the evidence for and against with its limitations, the open questions you are sitting with, the tensions between positions, the frameworks and stories that carry the ideas. The section holds any research programme, at any stage.",
+   "howToUse": "Say how sure you are, on the card. Every thesis, metric and evidence card carries a maturity badge (Intuition, Developing, Evidenced, Contested), a reading status (Unread, Skimmed, Read, Verified, Original) and a provenance line: own work, developed with AI, from literature. Evidence carries its source type and its limitations beside its finding. A stranger can see at a glance what is a hunch and what is a result, and so can you, six months later.\n\nBuild from the course and the field. Cards elsewhere in the deck carry a Research relevance line naming what they contribute to a frontier, and the related-cards list brings them here. The course feeds the research; the map tells you who else is working on it.\n\nWalk a frontier. Open a topic in the spine. Its frontier card introduces it (a structure card, edited from the tree icon), then the theses, then everything under them. Play All reads a frontier aloud in order, statement to open problems. On a walk, that is a draft you are listening to.\n\nDraft with it. Export a frontier, or one thesis with its evidence, as a Word file. The badges come with the text, so a reviewer sees the claim and its maturity together. Add references (label and link) to any thesis, metric or evidence card and they print as further reading.\n\nKeep the questions. An open question card has the question, why you are sitting with it, your current thinking and a status: Open, Sitting with, Provisionally answered. Questions are cards, not margins.",
+   "aiWorkflow": "Give your assistant this guide, the card forms for thesis, metric, evidence, question and tension, and a folder of your notes, a draft, a transcript. Ask it to propose the frontier and the working set with the honesty kept: maturity starts at Intuition, provenance says developed with AI when it was, and evidence never comes without a limitation. You promote a card's maturity by hand, when you have earned it. If Cairn's GitHub page has a skill for research, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-further-reading",
+   "type": "guide",
+   "title": "Further Reading",
+   "sectionRoot": "furtherReading",
+   "blurb": "The shelf beyond any course: books, essays, talks and the people behind them, carded so a chapter you read once stays findable, quotable and linked to what you are building.",
+   "description": "Reading organised by principal, the author or voice, with each work as a library card (author, year, media type, your reading status, why it matters, a summary) and the chapters, ideas and arguments inside it as cards of their own. Your shelves hold whoever you are reading.",
+   "howToUse": "Shelves by voice. Each principal is a row in the spine, a structure card with a description and its own resource list, so an author's works sit together. Open a work and read the cards under it: the argument, the concept it introduced, the tension it exposes, the story it tells.\n\nTrack what you have read. Library cards carry a status (To read, Reading, Read) and a media type, a summary in your words and a why-it-matters line. Star the ones to return to. Search finds the sentence you half remember, in your notes or on the card.\n\nLet a reading live in two places. A book chapter that a course also assigns appears in both, on its author's shelf and in the unit, as one card and not a copy. The card's back says where it appears.\n\nFeed the research. A reading's Research relevance line records what it contributes to which frontier, and the related cards take you across. The shelf is where the lineage of your own arguments is kept.\n\nHear a shelf. Play All on a principal reads the works and their cards in order: an author's thinking as an audiobook of your own notes.",
+   "aiWorkflow": "Give your assistant this guide, the library card form and the content card forms, and a book's table of contents or an essay's text. A shelf is a course without exercises, so the same method applies: the library card first, then the cards inside it. When a reading also belongs to a course, decide whether it should appear in both places or only link; the \"Appears in\" field does the first, the related-cards list the second. If Cairn's GitHub page has a skill for reading, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-cairns",
+   "type": "guide",
+   "title": "Cairns",
+   "sectionRoot": "cairns",
+   "blurb": "Your career pivot, planned and traced where you study, so the plan cannot drift silently and every check-in leaves a stone.",
+   "description": "A career plan as cards, next to the work it is for: a baseline (where you started: achievements, strengths, constraints, motivations), plans A, B and Z with the routes, the target organisations and the triggers for switching, phases with their timeframe and success criteria, goals with dates, opportunities with a reasoned decision, uncertainties with the cheapest test that would settle them, boundaries you have set yourself and whether they are holding, and check-ins: what moved, what stalled, whether the plan still describes what you are doing. Private by default: this section never travels in a shared pack.",
+   "howToUse": "A heartbeat, not a reminder. The section header shows how long since your last check-in and turns amber, then red, rebuild the cairn, when you are overdue against the cadence you set. A due-soon strip lists goals and opportunities in the next fortnight, and each one exports to your calendar with a click.\n\nPlans that admit change. Edit a plan substantively and the app asks whether to log an amendment: one dated line, kept on the card. The plan's history is on the plan.\n\nDecide on the record. An opportunity card holds the role, the link, the deadline, and your decision (pursuing, applied, skipped, later, expired) with the reasoning. Skipping well is a result, and it stays.\n\nTest your doubts. An uncertainty is a question, why it matters, the cheapest test, and its status. When the test runs, the result goes on the card and the question closes.\n\nFilter your own life. The Cairns type filter shows one kind at a time. Pick one and a status filter appears for that type: every goal in progress, every boundary that is wobbling.\n\nWrite the check-in. Eight questions, the same every time: what moved, what stalled, the drift check, amendments made, sustainability, next priority. Dated, listed by month. Written honestly, the check-ins are the story of the crossing.",
+   "aiWorkflow": "Give your assistant this guide, the Cairns card forms, and your own documents: bootcamp notes, a CV, a plan you wrote once. Ask for the baseline, the A, B and Z plans, the first goals and boundaries and a first check-in, every line a scaffold in your own words for you to overwrite. Then check in on your own cadence, and the app will remind you, gently. If Cairn's GitHub page has a skill for career plans, it does this with less setting up. The example pack's Cairns are made up, so you can see the shape without seeing anyone's life.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [],
+   "cadenceDays": 14
+  }
+ ]
+}

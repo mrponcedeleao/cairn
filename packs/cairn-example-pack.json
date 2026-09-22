@@ -1,0 +1,1414 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "guide-app-how-to-use",
+   "type": "guide",
+   "title": "How to use Cairn",
+   "sectionRoot": "app",
+   "blurb": "One file, no account, everything you are learning in one place. Read it, hear it, mark it, write on it, export it, and keep the plan that got you here alive.",
+   "description": "Cairn is a study companion for anyone crossing into a new field. It holds five kinds of thing that usually live in five places: a course, carded reading by reading; a map of the organisations and platforms in the field; your own research, structured with its honesty built in; a shelf of reading beyond any course; and the career plan that keeps the crossing on track. It is a single web page that reads a single deck file, cairn-deck.json. Open the page from your own computer or from its web address. Either way your cards stay in your file, on your device, and nothing you write leaves it. Cairn works offline once it is open. This deck holds six guides, one for the app and one for each of the five sections. On Cairn's GitHub page the starter deck is these guides and nothing else, and the sample pack fills every kind of card for a made-up field, so you can see the shapes before you make your own. Open either one from the welcome screen: Open your deck for a deck you mean to keep, Open a cards pack to look at one without adopting it.",
+   "howToUse": "Start. With no deck open, the welcome offers three doors: Open your deck (your cairn-deck.json), Open a cards pack (read a pack a colleague or a course sent you, without adding it to your deck), and Start a new deck. Your first card is a guide: it opens the section that holds the rest.\n\nFind your way. When a deck opens, All / Search lists its guides first, this one at the top, then the cards that give the deck its shape, in the order of the spine. The spine on the left is the whole deck as a tree: Cairns, Field Map, Research, Further Reading, then each course by unit. Every row shows a count; the little arrows open and close and remember how you left them. Click a section's name and you land on its guide, this card's cousins. The tree icon in the spine's toolbar opens the structure cards: the guides, the course units, the research topics, the reading shelves. That is the skeleton the content hangs on, so you can add a unit or a topic without touching a single content card.\n\nRead it, then hear it. Every card has a front (the one thing to remember) and a back (everything else; flip with Space or a tap). Press the speaker on any card and it reads aloud in a sensible order, field by field, with the field names spoken as cues. Press Play All above any list and it reads the whole list in the order you see it, with a mini-player and lock-screen controls on a phone, so a unit or a research topic becomes a walk. On a laptop, the left and right arrow keys step through cards and Space flips.\n\nChoose the voice. Settings offers your device's own voices, and a cloud voice if you want a better one: paste your own Google Text-to-Speech key, press Test, and it tells you plainly if something is wrong. The key stays on your device. A counter shows the characters sent this month, and a card read twice is not paid for twice, because the clips are kept. If the cloud voice fails, reading falls back to the device voice with a short notice, so it never goes silent.\n\nSearch everything, filter anything. The search box reads every text field on every card: definitions, your notes, the crux of a tension, an institution's details, a check-in. Results appear as you type. Then narrow: by type, by star, by hiding what you have marked done, and in the Field Map and Cairns by their own axes. Every filter is a chip you can remove. Back takes you the way you came, from a linked card to the card that linked it and from a card to its list, and only ever offers places that still exist.\n\nEverything links. Any concept, glossary term, person or framework named inside any card becomes a link where it appears: hover for the definition, click to go. Related cards sit at the foot of every card. Acronyms expand themselves the first time they appear. A card can appear in more than one place, a reading in a course and on an author's shelf at once, and says so on its back.\n\nMake it yours. Star what matters. Mark cards done and hide them. Write notes on every card with a small formatting toolbar; they are searchable and read aloud with the card. Answer exercises in the card itself, with a template if the author left one. Add your own cards with the green + button in the tab row. The form shows only the fields that type has, each with an ⓘ that explains it, and you place the card where it belongs with \"Appears in\".\n\nPut a card where it belongs. A card is in the wrong place when you find it under a section or unit it does not belong to, or cannot find it where you expected. Search finds it by any word in it, wherever it landed, and the card's back says where it appears. To move it, open the card, press Edit, and set Appears in: a course unit, a Further Reading shelf, or a research topic. Institutions and platforms file themselves in the Field Map and need nothing. Save, and the spine counts update.\n\nTake it with you. Any branch of the tree can be exported as a Word file or Markdown: a whole course, one unit, one research topic, one shelf, one card. Two ticks decide whether your notes and your exercise answers go with it, and each is counted before you press the button. Goals and opportunities export to your calendar. The whole deck exports as a JSON backup (JSON is the plain text format the deck file is written in) in one click.\n\nSave, at your desk and on the go. On a desktop, Save writes straight back to your file in Chrome and Edge, or downloads a copy under the same name your deck was opened with. On a phone, Save writes a small patch of just what changed, cairn-patch_<date>.json, and importing that patch into the full deck on your computer merges it. If the same card changed on both sides, the import names it by title and lets you choose. A chip on touch screens, or a pill on desktops, shows when there is unsaved work. If the browser is closed or crashes first, Cairn keeps what you had and offers Recover at the next open, and under Settings, Data file.\n\nGrow it. Import a pack, a JSON file of cards someone made: a course, a field map, a shelf. It merges by id and never duplicates, and the import summary says what was added and what was re-linked. Build your own cards with an AI assistant, by hand or with a skill (a recipe file the assistant reads first, so the cards it drafts follow the same conventions as these). Packs are content and skills are method, and both are how people share work. The GitHub link in the Menu is where the ones that exist are kept. The Contact button in the same menu reaches the author.",
+   "aiWorkflow": "Open the section's guide and a blank card of the type you want, and give your assistant three things: the guide (so it knows what the section is for), the card form's field names with their ⓘ text (so it knows what each field holds), and the source you want carded: a syllabus page, a folder of notes, an organisation's About page, your own documents. Ask for cards in the deck's JSON shape, honest about what it drafted and what it could not verify, and read every one before you import. The skills on Cairn's GitHub page do the same with less setting up; use whichever is there for the section you are building. The example cards in the example pack were drafted with Claude by the author, from full reads of their sources, and are labelled as examples on their face.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-course",
+   "type": "guide",
+   "title": "Course",
+   "sectionRoot": "course",
+   "blurb": "A whole course, carded reading by reading: every resource with its link, every exercise with your answer in it, and every idea it teaches turned into a card you can search, hear and link.",
+   "description": "A course as a study companion: units and sub-units as the syllabus lays them out, each reading with what it is and how long it takes, and the concepts, tensions, frameworks, people and stories each reading contains as cards of their own. It is the shape for any course you are taking: a university module, a professional certificate, a reading group. Courses shown are loaded as approved by their providers.",
+   "howToUse": "Walk the syllabus. Each unit is a row in the spine. Open a sub-unit and its syllabus card lists the readings, Required, Optional, or Added by author when the deck's owner brought something in, with the link, the author, the time it takes, and a Listen to article link where an audio version exists. Two small ticks per reading, reviewed and flashcards done, keep your place.\n\nLearn the reading, not only the summary. Under each reading sit its cards: a concept with its definition, an anchor (the memorable hook), a metaphor and why it matters; a tension with both parties, their claims and the crux; a framework with when to use it; the people, called cast, with their stance and key works; a story told as a metaphor; the glossary, whose terms light up wherever they appear in the deck. The cards cluster under the reading they came from, automatically, by source.\n\nDo the exercises in the card. Each exercise carries its prompt and a space for your answer, with formatting. Use template fills a structure the author left; the status chip goes Not started, Ongoing, Done as you work. Your answers are yours: they are not searchable by default and they export only when you tick the box.\n\nHear a unit on a walk. Play All on a sub-unit reads the syllabus, then each card, in order, with the field names spoken so you know where you are. The read-along toggle expands the list on screen in the same order.\n\nHand your work to a reviewer. Export this course's exercises, every prompt with your answer under it, headed by unit, as a Word file. Or export everything you have written across the deck, or one unit, or one card. This is how a peer, a tutor or an AI reviewer sees exactly what you did.\n\nBridge to your own work. Cards that bear on your research carry a Research relevance line, the author's note on what this reading contributes to which thesis, and the related-cards list takes you there. The course is not sealed off from what you are building.\n\nMark and hide. Star, done, hide done. Your progress is a filter, not a spreadsheet.",
+   "aiWorkflow": "Give your assistant this guide, the card forms for syllabus, concept, tension, framework, cast, story and glossary, and the syllabus page. Ask for the structure first (units, sub-units, readings with links and times) and then, reading by reading, the content cards, each with an anchor written to be remembered, its source named, and nothing invented. Import the structure first and the cards after, and read every card before you trust it. If Cairn's GitHub page has a skill for courses, it does this with less setting up. A course's owner may need to grant permission before a carded course is shared onward.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [],
+   "curriculum": ""
+  },
+  {
+   "id": "guide-field-map",
+   "type": "guide",
+   "title": "Field Map",
+   "sectionRoot": "fieldMap",
+   "blurb": "The organisations and the platforms of a whole field: where they are, what they do, how open they are, who to write to, and how many doors each has open right now, with the hours of research already done and dated.",
+   "description": "A map of a field you are entering. Institutions (labs, institutes, funders, think tanks, companies) and platforms (courses, communities, job boards, tools), each as a card with the facts a newcomer needs and the judgement calls a newcomer cannot make: a safety stance, an openness rating, a work-mode note, a checked-on date, and a provenance line saying which of the organisation's own pages were read, and when.",
+   "howToUse": "Find the door, and count them. Each card carries links (site, careers, papers), contacts (public addresses, as mailto), and opportunities as structured rows: kind, label, status, deadline, stipend, eligibility, work mode, and the date the author saw it. In the Table, the Open opps column shows, for every organisation, how many of its opportunities are still actionable, meaning open, rolling or upcoming. Closed, by invitation and not stated never count, because a door nobody has described is not an open door. Tap the header once and the organisations with the most openings come first; tap again for the fewest. Filter first to the slice you care about, a topic, a region, a research frontier, and the column does the arithmetic: twenty openings in the field you are entering, and which cards hold them. Track your own engagement (targeting, applied, in conversation) in the same row and star what you are working towards.\n\nFour views of the same cards. Cards, to read one organisation at a time. Map, a world map with a pin per site, clustered when they overlap, coloured by the organisation's safety stance, dashed when the location is approximate; zoom with the wheel, a pinch or the buttons, and country and city names appear as you go in; click a pin or a cluster to open the card. Table, every organisation as a row, an institution or a platform told apart by the dot before its title, sortable by location, activity, safety and open opportunities, with your reading status, engagement and star editable in the row. Locations, the sites themselves, region and country, editable in place.\n\nFilter to the slice you need. By type (institutions or platforms), by topic, organisation type, geography and relevance to a research frontier, each dropdown counting what is in view, plus starred and search. Filters apply to the map as much as to the list, so \"remote-friendly funders in Europe interested in welfare\" is three clicks and a look.\n\nRead the badges before the prose. Safety stance (mission, programme, partial, none found, not assessed) with a note; openness (open, partial, closed); work mode (on-site to fully remote); eligibility; the date it was checked; and provenance, how the card was made: which pages were read, when, in which language. The badges are the difference between a directory and a map.\n\nGo in and come back. Open an organisation, follow a link on its card, press Back and you are on the organisation again. Press it again and you are back on the table or the map, filters intact.\n\nTake a briefing with you. Export Institutions, or one activity bucket, or the platforms, as a Word file: a dated field briefing with links and badges, for a mentor, a funder conversation, or your own printout.",
+   "aiWorkflow": "Give your assistant this guide, the institution or platform card form, and an organisation's About page or careers page. Ask for the card in your words after a full read: blurb, details, badges left as not assessed until you judge them, links, a provenance line naming the pages it read, an opportunities row per live posting with its status and the date, and a location with city and country. You add the coordinates or mark the location approximate. Import in batches; the map draws itself and the Open opps column counts. If Cairn's GitHub page has a skill for field maps, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-research",
+   "type": "guide",
+   "title": "Research",
+   "sectionRoot": "research",
+   "blurb": "Your own research, structured so it cannot fool you: theses, metrics, evidence and open questions, each carrying how mature it is, whether you have read the source, and who wrote it.",
+   "description": "A scaffold for thinking in public before you publish. Research topics (frontiers) are the structure, and under each sits a working set: a thesis stated and defined, the metrics that would test it, the evidence for and against with its limitations, the open questions you are sitting with, the tensions between positions, the frameworks and stories that carry the ideas. The section holds any research programme, at any stage.",
+   "howToUse": "Say how sure you are, on the card. Every thesis, metric and evidence card carries a maturity badge (Intuition, Developing, Evidenced, Contested), a reading status (Unread, Skimmed, Read, Verified, Original) and a provenance line: own work, developed with AI, from literature. Evidence carries its source type and its limitations beside its finding. A stranger can see at a glance what is a hunch and what is a result, and so can you, six months later.\n\nBuild from the course and the field. Cards elsewhere in the deck carry a Research relevance line naming what they contribute to a frontier, and the related-cards list brings them here. The course feeds the research; the map tells you who else is working on it.\n\nWalk a frontier. Open a topic in the spine. Its frontier card introduces it (a structure card, edited from the tree icon), then the theses, then everything under them. Play All reads a frontier aloud in order, statement to open problems. On a walk, that is a draft you are listening to.\n\nDraft with it. Export a frontier, or one thesis with its evidence, as a Word file. The badges come with the text, so a reviewer sees the claim and its maturity together. Add references (label and link) to any thesis, metric or evidence card and they print as further reading.\n\nKeep the questions. An open question card has the question, why you are sitting with it, your current thinking and a status: Open, Sitting with, Provisionally answered. Questions are cards, not margins.",
+   "aiWorkflow": "Give your assistant this guide, the card forms for thesis, metric, evidence, question and tension, and a folder of your notes, a draft, a transcript. Ask it to propose the frontier and the working set with the honesty kept: maturity starts at Intuition, provenance says developed with AI when it was, and evidence never comes without a limitation. You promote a card's maturity by hand, when you have earned it. If Cairn's GitHub page has a skill for research, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-further-reading",
+   "type": "guide",
+   "title": "Further Reading",
+   "sectionRoot": "furtherReading",
+   "blurb": "The shelf beyond any course: books, essays, talks and the people behind them, carded so a chapter you read once stays findable, quotable and linked to what you are building.",
+   "description": "Reading organised by principal, the author or voice, with each work as a library card (author, year, media type, your reading status, why it matters, a summary) and the chapters, ideas and arguments inside it as cards of their own. Your shelves hold whoever you are reading.",
+   "howToUse": "Shelves by voice. Each principal is a row in the spine, a structure card with a description and its own resource list, so an author's works sit together. Open a work and read the cards under it: the argument, the concept it introduced, the tension it exposes, the story it tells.\n\nTrack what you have read. Library cards carry a status (To read, Reading, Read) and a media type, a summary in your words and a why-it-matters line. Star the ones to return to. Search finds the sentence you half remember, in your notes or on the card.\n\nLet a reading live in two places. A book chapter that a course also assigns appears in both, on its author's shelf and in the unit, as one card and not a copy. The card's back says where it appears.\n\nFeed the research. A reading's Research relevance line records what it contributes to which frontier, and the related cards take you across. The shelf is where the lineage of your own arguments is kept.\n\nHear a shelf. Play All on a principal reads the works and their cards in order: an author's thinking as an audiobook of your own notes.",
+   "aiWorkflow": "Give your assistant this guide, the library card form and the content card forms, and a book's table of contents or an essay's text. A shelf is a course without exercises, so the same method applies: the library card first, then the cards inside it. When a reading also belongs to a course, decide whether it should appear in both places or only link; the \"Appears in\" field does the first, the related-cards list the second. If Cairn's GitHub page has a skill for reading, it does this with less setting up.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "id": "guide-cairns",
+   "type": "guide",
+   "title": "Cairns",
+   "sectionRoot": "cairns",
+   "blurb": "Your career pivot, planned and traced where you study, so the plan cannot drift silently and every check-in leaves a stone.",
+   "description": "A career plan as cards, next to the work it is for: a baseline (where you started: achievements, strengths, constraints, motivations), plans A, B and Z with the routes, the target organisations and the triggers for switching, phases with their timeframe and success criteria, goals with dates, opportunities with a reasoned decision, uncertainties with the cheapest test that would settle them, boundaries you have set yourself and whether they are holding, and check-ins: what moved, what stalled, whether the plan still describes what you are doing. Private by default: this section never travels in a shared pack.",
+   "howToUse": "A heartbeat, not a reminder. The section header shows how long since your last check-in and turns amber, then red, rebuild the cairn, when you are overdue against the cadence you set. A due-soon strip lists goals and opportunities in the next fortnight, and each one exports to your calendar with a click.\n\nPlans that admit change. Edit a plan substantively and the app asks whether to log an amendment: one dated line, kept on the card. The plan's history is on the plan.\n\nDecide on the record. An opportunity card holds the role, the link, the deadline, and your decision (pursuing, applied, skipped, later, expired) with the reasoning. Skipping well is a result, and it stays.\n\nTest your doubts. An uncertainty is a question, why it matters, the cheapest test, and its status. When the test runs, the result goes on the card and the question closes.\n\nFilter your own life. The Cairns type filter shows one kind at a time. Pick one and a status filter appears for that type: every goal in progress, every boundary that is wobbling.\n\nWrite the check-in. Eight questions, the same every time: what moved, what stalled, the drift check, amendments made, sustainability, next priority. Dated, listed by month. Written honestly, the check-ins are the story of the crossing.",
+   "aiWorkflow": "Give your assistant this guide, the Cairns card forms, and your own documents: bootcamp notes, a CV, a plan you wrote once. Ask for the baseline, the A, B and Z plans, the first goals and boundaries and a first check-in, every line a scaffold in your own words for you to overwrite. Then check in on your own cadence, and the app will remind you, gently. If Cairn's GitHub page has a skill for career plans, it does this with less setting up. The example pack's Cairns are made up, so you can see the shape without seeing anyone's life.",
+   "links": [
+    {
+     "label": "Cairn on GitHub (the README, the packs, the skills)",
+     "url": "https://github.com/mrponcedeleao/cairn"
+    },
+    {
+     "label": "The packs (the starter deck and the example pack)",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/packs/"
+    },
+    {
+     "label": "User guide",
+     "url": "https://github.com/mrponcedeleao/cairn/blob/main/docs/USER-GUIDE.md"
+    },
+    {
+     "label": "Skills for AI assistants",
+     "url": "https://github.com/mrponcedeleao/cairn/tree/main/skills/"
+    },
+    {
+     "label": "Open Cairn in your browser",
+     "url": "https://mrponcedeleao.github.io/cairn/"
+    }
+   ],
+   "source": "",
+   "track": "",
+   "relatedIds": [],
+   "references": [],
+   "myNotes": "",
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T15:00:00.000Z",
+   "modified": "2026-09-21T15:00:00.000Z",
+   "tags": [],
+   "cadenceDays": 14
+  },
+  {
+   "id": "ex-courseunit-1",
+   "type": "courseUnit",
+   "title": "Unit 1: Reading the Ground",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "course",
+   "courseId": "guide-course",
+   "unitKey": "unit-1",
+   "order": 1,
+   "description": "Sample card: delete me once you have your own. A unit card introduces a block of the course. This pretend unit covers how paths form and how walkers read terrain."
+  },
+  {
+   "id": "ex-syllabus-1-1",
+   "type": "syllabus",
+   "title": "Unit 1.1 - Why paths go where they go",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "course": "guide-course",
+     "unitKey": "unit-1"
+    }
+   ],
+   "subLabel": "1.1",
+   "intro": "Sample card: delete me once you have your own. A syllabus card defines a sub-unit: its intro text, learning outcomes, and the reading list below. Content cards point at this card to appear under it.",
+   "learningOutcomes": "Understand desire lines; explain why the oldest path is rarely the straightest.",
+   "duration": "45 min",
+   "resources": [
+    {
+     "title": "The Old Ways of Walking (fictional)",
+     "required": true,
+     "author": "A. Vega",
+     "year": "2019",
+     "readTime": "20 min",
+     "linkWritten": "https://example.com/old-ways",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Old Ways of Walking"
+    },
+    {
+     "title": "Desire Lines: a field guide (fictional)",
+     "required": false,
+     "author": "K. Moss",
+     "year": "2021",
+     "readTime": "15 min",
+     "linkWritten": "https://example.com/desire-lines",
+     "summary": "A made-up reading for the sample course.",
+     "sourceMatch": "Desire Lines"
+    }
+   ],
+   "resourceProgress": {},
+   "myNotes": ""
+  },
+  {
+   "id": "ex-frontier-wayfinding",
+   "type": "frontier",
+   "title": "The Wayfinding Problem",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "research",
+   "order": 1,
+   "description": "Sample card: delete me once you have your own. A research topic card heads a topic. The pretend claim: walkers do not follow maps, they follow accumulated small decisions, and paths remember those decisions longer than any map does. Your real topic goes here; the cards beneath show the method."
+  },
+  {
+   "id": "fr-member-ex-vega",
+   "type": "sectionMember",
+   "title": "Alma Vega / The Trailworks Institute (fictional)",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [],
+   "sectionRoot": "furtherReading",
+   "castMatch": "Alma Vega (fictional)",
+   "description": "Sample card: delete me once you have your own. A principal card heads an author's shelf in Further Reading.",
+   "resources": [
+    {
+     "title": "The Old Ways of Walking (fictional)",
+     "required": false,
+     "author": "Alma Vega",
+     "year": "2019",
+     "readTime": "20 min",
+     "summary": "Her book on why paths go where they go; also Unit 1.1's required reading.",
+     "linkWritten": "https://example.com/old-ways",
+     "sourceMatch": "Old Ways of Walking"
+    },
+    {
+     "title": "Paths as Memory (fictional lecture)",
+     "required": false,
+     "author": "Alma Vega",
+     "year": "2022",
+     "readTime": "30 min",
+     "linkWritten": "https://example.com/paths-memory",
+     "sourceMatch": "Paths as Memory"
+    }
+   ]
+  },
+  {
+   "id": "ex-concept-desire-lines",
+   "type": "concept",
+   "title": "Desire lines",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [
+    "ex-inst-trailworks"
+   ],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "definition": "Sample card: delete me once you have your own. The definition field holds the idea in two clean sentences. Desire lines are the unofficial paths worn by walkers choosing, again and again, a route the planners did not draw.",
+   "anchor": "The anchor ties the idea to something in the course: in Unit 1.1's reading, the shortcut across the meadow that becomes the real path.",
+   "metaphor": "The metaphor gives the idea a picture: every desire line is a vote, counted in footprints.",
+   "whyItMatters": "This field says why you should care: systems reveal what people actually do, not what they were told to do.",
+   "researchRelevance": "Sample: this is where you connect a reading to YOUR research focus. For instance: 'Desire lines are evidence for my Wayfinding thesis: paths encode decisions.' Delete this text and write your own bridge.",
+   "myNotes": "myNotes is your private margin, never part of the card's public face."
+  },
+  {
+   "id": "ex-glossary-cairn",
+   "type": "glossary",
+   "title": "cairn",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "term": "cairn",
+   "expansion": "a stack of stones marking a route",
+   "definition": "Sample card: delete me once you have your own. A glossary card pins a term. A cairn is a human-made stack of stones that marks a path where the ground itself gives no clues.",
+   "example": "'Follow the cairns above the treeline.'",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cast-vega",
+   "type": "cast",
+   "title": "Alma Vega (fictional)",
+   "source": "The Old Ways of Walking (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    },
+    {
+     "cast": "fr-member-ex-vega"
+    }
+   ],
+   "role": "Sample card: delete me once you have your own. A cast card holds a person the course keeps meeting. Vega is our invented trail historian, author of the Unit 1.1 reading.",
+   "stance": "Paths-as-memory school; sceptical of top-down trail design.",
+   "keyWorks": [
+    {
+     "label": "The Old Ways of Walking (fictional)",
+     "url": "https://example.com/old-ways"
+    }
+   ],
+   "anchor": "Appears in Unit 1.1 and again on the Further Reading shelf, one person, two homes: that is what memberships are for.",
+   "whyTheyMatter": "Cast cards stop a new field feeling like a wall of strangers.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-actor-wardens",
+   "type": "actor",
+   "title": "Mountain Wardens (fictional)",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "role": "Institution",
+   "whoAreThey": "• An actor card maps a GROUP with power in the field.\n• The Wardens maintain official trails.",
+   "whatTheyWant": "• Safe, durable, maintainable routes.",
+   "whatTheyFear": "• Erosion; rescue callouts; desire lines undoing their work.",
+   "whatTheyCanDo": "• Close routes; build cairns; redirect walkers.",
+   "whatTheyHaveDone": "• Paved the meadow shortcut after twenty years of footprints won.",
+   "whatLimitsThem": "• Budget; weather; the fact that walkers vote with their feet.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-exercise-first-walk",
+   "type": "exercise",
+   "title": "Exercise: map your own desire line",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "prompt": "Sample card: delete me once you have your own. An exercise card holds a course exercise and YOUR answer, kept together. Prompt: think of a shortcut you take daily that no one designed. Why does it beat the official route? Write three sentences below.",
+   "userResponse": "",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-story-two-paths",
+   "type": "story",
+   "title": "The Two Paths",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "body": "Sample card: delete me once you have your own. A story card carries the topic's narrative heart.\n\nTwo villages sit one valley apart. The engineers built a road between them: graded, drained, straight. The shepherds kept an older line, higher on the slope, that no one built at all.\n\nIn winter the road floods and the old line holds. The road knows the map. The path knows the mountain.\n\nYour research topic deserves one story like this, it is the card people remember.",
+   "myNotes": "Field guide: 'body' is free prose; stories render body-forward.",
+   "metaphor": "Two paths through one meadow: the planned one and the walked one."
+  },
+  {
+   "id": "ex-thesis-paths-remember",
+   "type": "thesis",
+   "title": "Paths remember decisions",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "theFrontier": "The Wayfinding Problem",
+   "statement": "Sample card: delete me once you have your own. A thesis card states your claim plainly: a path is a ledger of past decisions, and reading it beats reading the map when conditions change.",
+   "evidenceFor": "Not yet an evidenced finding, one field observation (the winter road) and intuition. Honesty first: the maturity badge below says exactly how far this has been tested.",
+   "openProblems": "How to measure 'memory' in a path? See the metric card.",
+   "maturity": "Intuition",
+   "provenance": "Drafted with an AI collaborator from the author's outline; the author has verified the framing but not yet the sources. (The provenance field exists to admit exactly this.)",
+   "myNotes": "Field guide: keep 'maturity' honest, Intuition until tested. That badge is your credibility.",
+   "readingStatus": "Original",
+   "definition": "A path keeps the record of every decision taken on it; where it goes tells you what its walkers chose, season after season.",
+   "anchor": "The winter road that stayed in use after the bridge opened.",
+   "metaphor": "Footprints as a ledger.",
+   "whyItMatters": "If paths remember, then reading them is reading the walkers, which is the whole point of the map."
+  },
+  {
+   "id": "ex-metric-path-persistence",
+   "type": "metric",
+   "title": "Path Persistence Score",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "whatItMeasures": "Sample card: delete me once you have your own. A metric card proposes a measurement: how long a route stays in use after its official alternative appears.",
+   "howCalculated": "Seasons of continued use ÷ seasons since the alternative opened. 1.0 = the old path never died.",
+   "validityConcerns": "A metric card always carries its own doubts: usage is hard to observe; snow hides evidence; walkers lie in surveys. Naming the weaknesses is part of the method.",
+   "maturity": "Intuition",
+   "provenance": "Drafted with an AI collaborator from the author's outline; the author has verified the framing but not yet the sources. (The provenance field exists to admit exactly this.)",
+   "myNotes": "",
+   "readingStatus": "Original",
+   "definition": "How long an old path stays in use after a better alternative opens, in seasons, as a share of the seasons since the alternative opened.",
+   "anchor": "The meadow shortcut: three fences, still walked.",
+   "whyItMatters": "A number that can be wrong is the first thing a thesis needs."
+  },
+  {
+   "id": "ex-evidence-meadow",
+   "type": "evidence",
+   "title": "The meadow shortcut outlived three fences (fictional)",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "finding": "Sample card: delete me once you have your own. An evidence card records one finding with its source and its limits. In our fictional study, the meadow desire line re-formed within one season after each of three fence builds. Its badge reads Evidenced because the person promoted it by hand after checking the source; an assistant drafting a card never sets a badge above Intuition.",
+   "sourceRef": "Vega (2019), ch. 3, fictional.",
+   "strength": "Weak-moderate: single site, one observer.",
+   "limitations": "No control meadow; the observer planted the third fence herself.",
+   "supportsThesis": "Paths remember decisions",
+   "sourceType": "Original observation",
+   "readingStatus": "Read",
+   "provenance": "Drafted with an AI collaborator from the author's outline; the author has verified the framing but not yet the sources. (The provenance field exists to admit exactly this.)",
+   "myNotes": "",
+   "maturity": "Evidenced"
+  },
+  {
+   "id": "ex-question-who-decides",
+   "type": "question",
+   "title": "Who decides where the path goes?",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    },
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "question": "Sample card: delete me once you have your own. A question card holds an open question you are not ready to answer. If paths are ledgers of past walkers' decisions, who is accountable when the path leads somewhere harmful?",
+   "currentThinking": "Current thinking: no one and everyone, which is exactly why it stays an open question card and not a thesis.",
+   "whyItMatters": "Question cards invite attack, in research communities, that is how collaborators are found.",
+   "myNotes": " Field guide: this card lives in BOTH the course (Unit 1.1) and the Research topic, cross-listing via memberships, not copies."
+  },
+  {
+   "id": "ex-tension-build-vs-follow",
+   "type": "tension",
+   "title": "Build the path vs follow the walkers",
+   "source": "Desire Lines: a field guide (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    },
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "partyA": "The Wardens (and all planners)",
+   "claimA": "Routes should be designed: safety, drainage and durability require foresight that footprints do not have.",
+   "partyB": "The desire-line school (Vega)",
+   "claimB": "Routes should be discovered: accumulated walker decisions encode knowledge no planner can survey.",
+   "crux": "Sample card: delete me once you have your own. The crux field names the actual disagreement: whether local knowledge in footprints outweighs engineering foresight, measurable, in principle, by the Path Persistence Score.",
+   "whereItAppears": "Unit 1.1's reading vs the Wardens' trail manual (fictional).",
+   "myNotes": " Field guide: this card lives in BOTH the course (Unit 1.1) and the Research topic, cross-listing via memberships, not copies."
+  },
+  {
+   "id": "ex-framework-three-reads",
+   "type": "framework",
+   "title": "The Three Reads of a Path",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "definition": "Sample card: delete me once you have your own. A framework card packages a reusable thinking tool.",
+   "components": "1. READ THE SURFACE, wear, width, litter: who uses it and how often.\n2. READ THE LINE, where it bends without reason: old obstacles, remembered.\n3. READ THE ABSENCE, where no path is: what walkers avoid tells you most.",
+   "whenToUse": "When entering any new territory, literal or professional.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-inst-trailworks",
+   "type": "institution",
+   "title": "The Trailworks Institute (fictional)",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [
+    "ex-concept-desire-lines"
+   ],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "fieldMap"
+    }
+   ],
+   "blurb": "Sample card: delete me once you have your own. An institution card maps one organisation: what it does, how open it is, and what it is offering right now.",
+   "details": "A pretend research institute studying how routes form. The details field holds what they actually do, in your words, write it after reading their About page, not instead of.",
+   "activityBucket": "Research",
+   "orgType": "nonprofit",
+   "geography": "UK",
+   "frontierRelevance": "The Wayfinding Problem",
+   "links": [
+    {
+     "label": "Website (made up)",
+     "url": "https://example.com/trailworks"
+    },
+    {
+     "label": "Careers (made up)",
+     "url": "https://example.com/trailworks/jobs"
+    }
+   ],
+   "myNotes": "Course and research cards link here through Related cards rather than being filed here; an organisation belongs to the Field Map only.",
+   "orgTypeNote": "",
+   "topics": [
+    "forecasting & measurement",
+    "education & learning"
+   ],
+   "city": "Sheffield",
+   "country": "UK",
+   "region": "UK & Ireland",
+   "safety": "programme",
+   "safetyNote": "Runs a route-safety programme alongside its research (made up, like everything on this card).",
+   "openness": "open",
+   "opennessNote": "Publishes its datasets.",
+   "workMode": "hybrid",
+   "workModeNote": "Two days a week in Sheffield.",
+   "eligibilityNote": "Most roles ask for UK right to work.",
+   "stance": "Paths-as-evidence: study what walkers do before designing for them.",
+   "contacts": [
+    {
+     "label": "General enquiries (made up)",
+     "url": "mailto:hello@example.com"
+    }
+   ],
+   "opportunities": [
+    {
+     "kind": "job",
+     "label": "Research Assistant, path persistence",
+     "url": "https://example.com/trailworks/jobs/ra",
+     "status": "open",
+     "asOf": "2026-09-15",
+     "deadline": "2026-10-10",
+     "stipend": "32,000 to 36,000 pounds a year",
+     "eligibility": "A first degree in any field and a season of fieldwork; UK right to work.",
+     "workMode": "hybrid"
+    },
+    {
+     "kind": "fellowship",
+     "label": "Winter Fellowship (six months)",
+     "url": "https://example.com/trailworks/fellowship",
+     "status": "upcoming",
+     "asOf": "2026-09-15",
+     "deadline": "2026-11-30",
+     "stipend": "2,400 pounds a month",
+     "eligibility": "Career changers welcome; a written proposal of one page.",
+     "workMode": "onsite"
+    },
+    {
+     "kind": "job",
+     "label": "Operations Manager",
+     "url": "https://example.com/trailworks/jobs/ops",
+     "status": "closed",
+     "asOf": "2026-09-15",
+     "deadline": "2026-08-31",
+     "stipend": "",
+     "eligibility": "Filled in September.",
+     "workMode": "hybrid"
+    }
+   ],
+   "engagement": "targeting",
+   "depth": "full",
+   "checkedOn": "2026-09-15",
+   "provenance": "Sample card. On a real card this line says which of the organisation's own pages were read, on what date and in which language; for example: About and Careers pages read 15 September 2026, in English.",
+   "locations": [
+    {
+     "city": "Sheffield",
+     "country": "UK",
+     "latlng": [
+      53.4,
+      -1.5
+     ],
+     "approxLocation": false,
+     "hiringOnly": false,
+     "note": "Head office (made up)."
+    }
+   ],
+   "latlng": [
+    53.4,
+    -1.5
+   ],
+   "approxLocation": false,
+   "researchRelevance": "Their persistence dataset would test the Path Persistence Score; the researchRelevance field is where a Field Map card meets your research."
+  },
+  {
+   "id": "ex-plat-waymark",
+   "type": "platform",
+   "title": "Waymark (fictional)",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "fieldMap"
+    }
+   ],
+   "blurb": "Sample card: delete me once you have your own. A platform card maps a place where careers and courses happen: a job board, a course provider, a community.",
+   "details": "A pretend job board and course hub for path sciences. Platforms answer: where do people in this field gather, learn, and get hired?",
+   "activityBucket": "Career guidance & development",
+   "orgType": "commercial",
+   "geography": "Global",
+   "links": [
+    {
+     "label": "Job board (made up)",
+     "url": "https://example.com/waymark-jobs"
+    }
+   ],
+   "myNotes": "",
+   "orgTypeNote": "",
+   "frontierRelevance": "",
+   "topics": [
+    "education & learning"
+   ],
+   "city": "Lisbon",
+   "country": "Portugal",
+   "region": "Continental Europe",
+   "safety": "none-found",
+   "safetyNote": "No safety programme found on its pages; that is a finding, not an accusation.",
+   "openness": "open",
+   "opennessNote": "",
+   "workMode": "fully-remote",
+   "workModeNote": "",
+   "eligibilityNote": "",
+   "stance": "",
+   "contacts": [],
+   "opportunities": [
+    {
+     "kind": "course",
+     "label": "Reading the Ground, online cohort",
+     "url": "https://example.com/waymark/course",
+     "status": "rolling",
+     "asOf": "2026-09-15",
+     "deadline": null,
+     "stipend": "free",
+     "eligibility": "Anyone.",
+     "workMode": "fully-remote"
+    }
+   ],
+   "engagement": "",
+   "depth": "full",
+   "checkedOn": "2026-09-15",
+   "provenance": "Sample card. Home and Courses pages read 15 September 2026, in English.",
+   "locations": [
+    {
+     "city": "Lisbon",
+     "country": "Portugal",
+     "latlng": [
+      38.7,
+      -9.1
+     ],
+     "approxLocation": false,
+     "hiringOnly": false,
+     "note": "Registered office (made up)."
+    }
+   ],
+   "latlng": [
+    38.7,
+    -9.1
+   ],
+   "approxLocation": false
+  },
+  {
+   "id": "ex-lib-old-ways",
+   "type": "library",
+   "title": "The Old Ways of Walking (fictional)",
+   "source": "The Old Ways of Walking (fictional)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "cast": "fr-member-ex-vega"
+    },
+    {
+     "subUnit": "ex-syllabus-1-1"
+    }
+   ],
+   "author": "Alma Vega",
+   "year": "2019",
+   "mediaType": "Book",
+   "status": "Reading",
+   "summary": "Sample card: delete me once you have your own. A library card is one resource on your shelf: an honest one-line summary, your reading status, and later your notes.",
+   "whyItMatters": "It is Unit 1.1's required reading AND on Vega's shelf, one card, two homes, via memberships.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-lib-paths-as-memory",
+   "type": "library",
+   "title": "Paths as Memory (fictional lecture)",
+   "source": "Paths as Memory (fictional lecture)",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "cast": "fr-member-ex-vega"
+    }
+   ],
+   "author": "Alma Vega",
+   "year": "2023",
+   "mediaType": "Talk",
+   "status": "To read",
+   "summary": "Sample card: delete me once you have your own. This one sits on the shelf and nowhere else: its only membership is the shelf itself. The card above is the same author's book, and it is ONE card in TWO homes - the course unit that assigns it and this shelf - not two cards.",
+   "whyItMatters": "",
+   "myNotes": "",
+   "researchRelevance": ""
+  },
+  {
+   "id": "ex-cairn-baseline",
+   "type": "baseline",
+   "title": "Baseline, where Sam started",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "asOf": "2026-05-15",
+   "body": "Sample card: delete me once you have your own. The baseline is who you are on day one, written once, edited rarely. Sam: 12 years in supply-chain, burnt out on freight, in love with rewilding.",
+   "achievements": "Sample card: delete me once you have your own. Cut cold-chain waste 31%, led the sensor-tracking rollout across 40 depots. Evidence: internal award; the CFO's email.\n\n(One achievement per paragraph; name the evidence, that is the habit.)",
+   "strengths": "Logistics under uncertainty; making messy systems legible.",
+   "constraints": "Two kids; cannot relocate; 9 months of runway.",
+   "motivations": "Wants the second half of the career to mean something.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-plan-a",
+   "type": "plan",
+   "title": "Plan A, conservation tech operations",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "planLetter": "A",
+   "status": "active",
+   "statement": "Sample card: delete me once you have your own. A plan card states a direction and, crucially, when you would abandon it.",
+   "routes": "Operations roles at rewilding orgs; supply-chain skills mapped to field-station logistics.",
+   "targetOrgs": "TrailWorks Institute (see Field Map)",
+   "switchTriggers": "If no interview by month 6, weight shifts to Plan B.",
+   "amendments": "2026-08-01: narrowed from 'anything green' to operations roles (from the 1 August check-in).",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-phase-1",
+   "type": "phase",
+   "title": "Phase 1, Learn the field",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "order": 1,
+   "timeframe": "May to July 2026",
+   "status": "closed",
+   "purpose": "Sample card: delete me once you have your own. A phase card blocks the journey into stages with success criteria you can check.",
+   "successCriteria": "One course finished; ten organisations mapped; three conversations.",
+   "retrospective": "Met 2 of 3, conversations were the hard part. Carried into Phase 2.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-goal-1",
+   "type": "goal",
+   "title": "Finish the Conservation Tech 101 course",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "phaseId": "ex-cairn-phase-1",
+   "targetDate": "2026-07-31",
+   "status": "done",
+   "statement": "Sample card: delete me once you have your own. A goal card is one commitment with a date and evidence.",
+   "evidence": "Certificate saved; final project = a field-station supply model.",
+   "outcome": "Done two weeks late, logged honestly, the trail is the point.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-opp-1",
+   "type": "opportunity",
+   "title": "Ranger-station ops coordinator (fictional)",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "org": "Highlands Trust",
+   "role": "Operations Coordinator",
+   "deadline": "2026-07-20",
+   "decision": "skipped",
+   "reasoning": "Sample card: delete me once you have your own. The reasoning field is the treasure: Sam skipped this because it required relocation, a constraint the Baseline already named. A reasoned no prevents both regret and drift.",
+   "link": "https://example.com/highlands-role",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-unc-1",
+   "type": "uncertainty",
+   "title": "Do ops skills actually transfer to field stations?",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "question": "Sample card: delete me once you have your own. An uncertainty card names what you do not know and the cheapest way to find out.",
+   "whyItMatters": "Plan A rests on it.",
+   "cheapestTest": "One coffee with a station manager; ask what breaks weekly.",
+   "testStatus": "resolved",
+   "result": "Yes, 'it is freight with mud'. Resolved by one conversation, not a course.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-bnd-1",
+   "type": "boundary",
+   "title": "No applications during course weeks",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "status": "holding",
+   "statement": "Sample card: delete me once you have your own. A boundary card is what you will NOT do, the strongest anti-drift device.",
+   "why": "Split attention killed Sam's January: half-studied, half-applied, neither done well.",
+   "lastReviewed": "2026-09-01",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-cairn-checkin-1",
+   "type": "checkin",
+   "title": "Check-in, 1 August",
+   "source": "Cairn example pack",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "starred": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z",
+   "completed": false,
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "date": "2026-08-01",
+   "periodCovered": "2026-07-01 to 2026-08-01",
+   "whatMoved": "Sample card: delete me once you have your own. A check-in is a dated stone on the trail: what moved, what stalled, and the drift question. Moved: course modules 3–5; org map at 12.",
+   "whatStalled": "Conversations: zero. Fear, not time.",
+   "driftCheck": "Does the plan still describe what I am actually doing? Mostly, but applications had drifted broad; amended Plan A (see its amendment log).",
+   "amendmentsMade": "Plan A narrowed to operations roles.",
+   "sustainability": "Sleep fine; evenings with the kids protected.",
+   "nextPriority": "Three conversations before anything else. Once written, a check-in is never edited, corrections go in the NEXT one.",
+   "myNotes": ""
+  },
+  {
+   "id": "ex-inst-ridgeway",
+   "type": "institution",
+   "title": "Ridgeway Foundation (made up)",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "fieldMap"
+    }
+   ],
+   "blurb": "Sample card: delete me once you have your own. A funder card: the same fields, filled for a grant-maker rather than an employer.",
+   "details": "A pretend foundation that funds small trail studies. Nothing is open today, which is exactly what the Open opps column shows: a 0, so you look elsewhere first.",
+   "orgType": "nonprofit",
+   "orgTypeNote": "A grant-making foundation; the sector word alone does not say that, which is what this note is for.",
+   "geography": "Global",
+   "activityBucket": "Funding",
+   "frontierRelevance": "The Wayfinding Problem",
+   "topics": [
+    "forecasting & measurement"
+   ],
+   "city": "Bern",
+   "country": "Switzerland",
+   "region": "Continental Europe",
+   "safety": "not-assessed",
+   "safetyNote": "",
+   "openness": "partial",
+   "opennessNote": "Funding rounds by invitation.",
+   "workMode": "not-stated",
+   "workModeNote": "",
+   "eligibilityNote": "",
+   "stance": "",
+   "links": [
+    {
+     "label": "Website (made up)",
+     "url": "https://example.com/ridgeway"
+    }
+   ],
+   "contacts": [],
+   "opportunities": [
+    {
+     "kind": "grant",
+     "label": "Small Trails Grant",
+     "url": "https://example.com/ridgeway/grants",
+     "status": "by-invitation",
+     "asOf": "2026-09-15",
+     "deadline": null,
+     "stipend": "up to 10,000 francs",
+     "eligibility": "Invited institutions only.",
+     "workMode": "not-stated"
+    }
+   ],
+   "engagement": "",
+   "depth": "stub",
+   "checkedOn": "2026-09-15",
+   "provenance": "Sample card. A stub: only the front page was read, 15 September 2026, in English; that is what the depth badge says.",
+   "locations": [
+    {
+     "city": "Bern",
+     "country": "Switzerland",
+     "latlng": [
+      46.9,
+      7.4
+     ],
+     "approxLocation": true,
+     "hiringOnly": false,
+     "note": "Approximate: the site names the city and no address."
+    }
+   ],
+   "latlng": [
+    46.9,
+    7.4
+   ],
+   "approxLocation": true,
+   "researchRelevance": "",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-thesis-shortcuts-win",
+   "type": "thesis",
+   "title": "Shortcuts win within two seasons",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "research"
+    }
+   ],
+   "track": "The Wayfinding Problem",
+   "theFrontier": "The Wayfinding Problem",
+   "statement": "Sample card: delete me once you have your own. A second thesis, one step further along: it has been stated, argued with a colleague, and has one piece of evidence behind it, so its badge reads Developing rather than Intuition.",
+   "definition": "If a shortcut saves more than a fifth of the walking time, walkers adopt it within two seasons whatever the signage says.",
+   "anchor": "The meadow shortcut (see the evidence card).",
+   "metaphor": "Water finds the drain.",
+   "whyItMatters": "If true, planners should design for the shortcut rather than against it.",
+   "researchRelevance": "",
+   "evidenceFor": "One field observation (the meadow); one interview (the Wardens' own manual admits it).",
+   "openProblems": "What counts as a season? Does it hold in towns?",
+   "maturity": "Developing",
+   "readingStatus": "Original",
+   "provenance": "Own work, with the wording tightened with an AI assistant; the claim is the author's.",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [
+    "ex-thesis-paths-remember",
+    "ex-evidence-meadow"
+   ],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-phase-2",
+   "type": "phase",
+   "title": "Phase 2, Talk to the field",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "order": 2,
+   "timeframe": "August to October 2026",
+   "status": "current",
+   "purpose": "Sample card: delete me once you have your own. The current phase: the one the section header and the due-soon strip are watching.",
+   "successCriteria": "Ten conversations; two applications sent; one uncertainty resolved.",
+   "retrospective": "",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-goal-2",
+   "type": "goal",
+   "title": "Send the Trailworks application",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "phaseId": "ex-cairn-phase-2",
+   "targetDate": "2026-10-03",
+   "targetTime": "",
+   "status": "in-progress",
+   "statement": "Sample card: delete me once you have your own. A goal with a date inside the next fortnight appears in the due-soon strip and exports to your calendar with one click.",
+   "evidence": "Draft cover letter written; two referees asked.",
+   "outcome": "",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-opp-2",
+   "type": "opportunity",
+   "title": "Research Assistant, path persistence (made up)",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "org": "The Trailworks Institute",
+   "role": "Research Assistant",
+   "link": "https://example.com/trailworks/jobs/ra",
+   "deadline": "2026-10-10",
+   "deadlineTime": "",
+   "sourceBoard": "Waymark",
+   "decision": "pursuing",
+   "reasoning": "Sample card: delete me once you have your own. The same posting as on the Trailworks card in the Field Map, seen from the other side: there it is one of the organisation's open doors, here it is Sam's decision about it.",
+   "outcome": "",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  },
+  {
+   "id": "ex-cairn-checkin-2",
+   "type": "checkin",
+   "title": "Check-in, 1 September",
+   "source": "Cairn example pack",
+   "memberships": [
+    {
+     "section": "cairns"
+    }
+   ],
+   "date": "2026-09-01",
+   "periodCovered": "2026-08-01 to 2026-09-01",
+   "whatMoved": "Sample card: delete me once you have your own. The latest check-in. With a fourteen-day cadence set on the Cairns guide, the section header counts from this date and turns amber, then red, when the next one is overdue; that is the heartbeat working, not an error.",
+   "whatStalled": "Applications: one drafted, none sent.",
+   "driftCheck": "Plan A still describes what I am doing; the boundary held through the course weeks.",
+   "amendmentsMade": "None this month.",
+   "sustainability": "Two late nights too many; fixed the following week.",
+   "nextPriority": "Send the Trailworks application before the deadline; then the fellowship proposal.",
+   "myNotes": "",
+   "tags": [
+    "example"
+   ],
+   "relatedIds": [],
+   "references": [],
+   "starred": false,
+   "completed": false,
+   "created": "2026-09-21T12:00:00.000Z",
+   "modified": "2026-09-21T12:00:00.000Z"
+  }
+ ]
+}
