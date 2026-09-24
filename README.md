@@ -47,6 +47,12 @@ There are two ways to use it, and both are fine.
 - **Just look.** Press **Open a cards pack** on the welcome screen. It shows you the pack without adopting it as your deck.
 - **Or start from it.** Rename the file to `cairn-deck.json`, open it with **Open your deck**, and it is your deck, guides and all. Write your own cards alongside the samples and **delete the samples as you go**: every one of them opens with *Sample card: delete me once you have your own*, and they are all tagged `example`, so searching for **example** brings up exactly the ones still to go and nothing of yours.
 
+## The user guide
+
+[`docs/USER-GUIDE.md`](docs/USER-GUIDE.md) walks through the whole app with a picture for each step: getting started, each of the five sections, working with an AI assistant, and what to do when something goes wrong.
+
+**It is a first draft.** It was checked against the app screen by screen and read by a newcomer before it went up, but few people have used it yet, so parts of it will change. If a step does not match what you see, or something is missing, that is exactly what it needs to hear: use the Contact button in the app, or open an issue on this repository.
+
 ## Your cards are yours
 
 The deck is plain JSON. You can read it, back it up, put it in a folder you sync, or open it in anything. Import adds cards to the deck you already have, matching by `id`, and **a card with an id you already use is replaced whole**, which is how you update a card on purpose and the one way to lose one by accident. The packs and the skills' check both warn about this before it happens.
